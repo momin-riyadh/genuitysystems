@@ -11,7 +11,6 @@
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="images/favicon.ico" />
-<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.css">
 
 <!-- Google fonts  -->
 
@@ -20,28 +19,9 @@
 <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet"> 
 
 
-<!-- Template's stylesheets -->
-<link rel="stylesheet" href="js/megamenu/stylesheets/screen.css">
-<link rel="stylesheet" href="css/theme-default.css" type="text/css">
-<link rel="stylesheet" href="js/loaders/stylesheets/screen.css">
-<link rel="stylesheet" href="css/corporate.css" type="text/css">
-<link rel="stylesheet" href="css/shortcodes.css" type="text/css">
-<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" type="text/css">
-<link rel="stylesheet" type="text/css" href="fonts/Simple-Line-Icons-Webfont/simple-line-icons.css" media="screen" />
-<link rel="stylesheet" href="fonts/et-line-font/et-line-font.css">
-<link rel="stylesheet" type="text/css" href="js/revolution-slider/css/settings.css">
-<link rel="stylesheet" type="text/css" href="js/revolution-slider/css/layers.css">
-<link rel="stylesheet" type="text/css" href="js/revolution-slider/css/navigation.css">
-<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-<link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="js/cubeportfolio/cubeportfolio.min.css">
-<link href="js/accordion/css/smk-accordion.css" rel="stylesheet">
-<link rel="stylesheet" href="js/ytplayer/ytplayer.css" />
-<link href="js/tabs/css/responsive-tabs.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="js/jFlickrFeed/style.css" />
-<link rel="stylesheet" href="js/parallax/main.css">
-<link rel='stylesheet' type='text/css' href='js/offcanvas/offcanvas.css' />
-<link rel='stylesheet' type='text/css' href='js/smart-forms/smart-forms.css' />
+<!-- Optimized CSS -->
+<link rel="stylesheet" href="css/optimized-styles.v1.css" type="text/css">
+
 
 <!-- Template's stylesheets END -->
 
@@ -52,8 +32,10 @@
 
 
 <!-- Style Customizer's stylesheets -->
+<!-- These were excluded from the main bundle as they are likely for development/customization only -->
 <link rel="stylesheet" type="text/css" href="js/style-customizer/css/spectrum.css">
 <link rel="stylesheet" type="text/css" href="js/style-customizer/css/style-customizer.css">
+<!-- The LESS file needs to be compiled to CSS and included, or handled by a client-side LESS processor -->
 <link rel="stylesheet/less" type="text/css" href="less/skin.less">
 <!-- Style Customizer's stylesheets END -->
 
