@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'et-line';
+	src:url('fonts/et-line.eot');
+	src:url('fonts/et-line.eot?#iefix') format('embedded-opentype'),
+		url('fonts/et-line.woff') format('woff'),
+		url('fonts/et-line.ttf') format('truetype'),
+		url('fonts/et-line.svg#et-line') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-mobile, .icon-phone, .icon-browser, .icon-camera, .icon-trophy, .icon-layers, .icon-pencil, .icon-anchor, .icon-bike, .icon-hotairballoon, .icon-chat, .icon-global {
+	font-family: 'et-line';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display:inline-block;
+}
+.icon-mobile:before {
+	content: "\e000";
+}
+.icon-phone:before {
+	content: "\e004";
+}
+.icon-browser:before {
+	content: "\e00c";
+}
+.icon-camera:before {
+	content: "\e012";
+}
+.icon-trophy:before {
+	content: "\e023";
+}
+.icon-layers:before {
+	content: "\e031";
+}
+.icon-pencil:before {
+	content: "\e032";
+}
+.icon-anchor:before {
+	content: "\e03f";
+}
+.icon-bike:before {
+	content: "\e042";
+}
+.icon-hotairballoon:before {
+	content: "\e044";
+}
+.icon-chat:before {
+	content: "\e049";
+}
+.icon-global:before {
+	content: "\e052";
+}

@@ -1,0 +1,702 @@
+/*
+Theme: Apare
+Author: Codelayers
+Version: 1.0
+Designed and Development by: Codelayers
+*/
+
+
+
+/*===============================================
+-------------------------------------------------
+image hover styles
+-------------------------------------------------
+================================================*/
+
+/* =========== image hovers============= */
+
+/*image hover style 1
+ ------------------------------ */
+
+
+/*image hover style 2
+ ------------------------------ */
+
+
+/*image hover style 3
+ ------------------------------ */
+
+
+/*image hover style 4
+ ------------------------------ */
+
+
+/* =========== date pickers ============= */
+
+
+
+
+/* =========== date picker input ============= */
+
+/* dark calendar
+ ------------------------------ */
+/* dark calendar
+ ------------------------------ */
+
+
+/* =========== Alert messages ============= */
+
+/* =========== blockquotes ============= */
+
+/* blockquote style 2
+ ------------------------------ */
+
+/* blockquote style 3
+ ------------------------------ */
+
+
+/* blockquote style 4
+ ------------------------------ */
+
+
+/* =========== breadcrumbs ============= */
+
+
+/* dark style
+ ------------------------------ */
+
+
+/* breadcrumb style 2
+ ------------------------------ */
+
+/* =========== buttons ============= */
+
+.btn {
+    border-radius: 0;
+    box-shadow: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 15px 35px;
+}
+
+/* button ratius
+ ------------------------------ */
+.btn.round {
+    border-radius: 4px;
+}
+
+/* button sizes
+ ------------------------------ */
+.btn.btn-large {
+    font-size: 20px;
+    padding: 20px 50px;
+}
+.btn.btn-large.radius {
+    border-radius: 3px;
+}
+
+/* button borders
+ ------------------------------ */
+
+.btn.border {
+	border:1px solid;
+}
+.btn.border.light {
+	border-color:#e9e9e9;
+}
+
+
+/* button text colors
+ ------------------------------ */
+
+.btn.btn-dark {
+    background-color: #323335;
+    color: #fff;
+}
+.btn.btn-dark:hover {
+    background-color: #525355;
+    color: #fff;
+}
+/* button animation 1
+ ------------------------------ */
+
+/* button animation 1
+ ------------------------------ */
+
+/* button animation 2
+ ------------------------------ */
+
+/* button animation 3
+ ------------------------------ */
+
+/* button animation 4
+ ------------------------------ */
+
+/* =========== call to action ============= */
+
+
+/* =========== counter numbers ============= */
+span.counter {
+	margin-top:20px;
+}
+
+
+/* =========== domain pricing table ============= */
+ th {
+	padding: 30px;
+/*	color: #242424;*/
+	border: none;
+	text-align:center;
+}
+
+
+
+/* =========== Medical timetable ============= */
+
+
+
+/* =========== dropcaps & Highlights ============= */
+
+
+
+/* =========== Responsive Classes ============= */
+.divider-line.dotted{
+    width: 100%;
+	height:2px;
+	border-top: 1px dotted;
+}
+
+
+/* =========== forms ============= */
+
+.form-body {
+	width:100%;
+    padding: 40px;
+	float:left;
+}
+
+/* =========== check boxes and selects ============= */
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight:normal;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+
+/* =========== Heading titles ============= */
+
+/* button animation 1
+ ------------------------------ */
+
+/* full width border lines
+ ------------------------------ */
+
+
+/* heading title color borders
+ ------------------------------ */
+
+
+/* =========== icon boxes ============= */
+
+
+/* icon boxes background color
+ ------------------------------ */
+
+
+
+/* =========== countdowns ============= */
+
+div#clock {
+	color: white;
+	margin:0 auto;
+	width: 100%;
+	overflow: hidden;
+	padding: 0 0 0 0;
+	text-align: center;
+}
+div#clock p {
+	border:1px solid #fff;
+	padding: 20px 20px;
+	margin-right: 10px;
+	display:inline-block;
+	text-align:center;
+}
+div#clock p b {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+div#clock p span {
+	display: block;
+	font-size: 50px;
+	font-weight: bold;
+	padding: 5px 0 20px 0;
+}
+div#clock div.space {
+	color: #ccc;
+	display: block;
+	line-height: 1.7em;
+	font-size: 50px;
+	float: left;
+	height: 88px;
+	width: 30px;
+}
+
+/* clock 2
+ ------------------------------ */
+
+/* clock 3
+ ------------------------------ */
+
+
+
+ /* clock 4 with circle
+ ------------------------------ */
+
+
+/* small clock 5
+ ------------------------------ */
+
+
+/* clock 6
+ ------------------------------ */
+
+
+/* clock 7 small box
+ ------------------------------ */
+
+
+ /* clock 8 with circle
+ ------------------------------ */
+
+
+ /*===============================================
+-------------------------------------------------
+	lists
+-------------------------------------------------
+================================================*/
+
+/* icon list style 1
+ ------------------------------ */
+
+
+/* icon sizes
+ ------------------------------ */
+
+
+
+/* icon colors
+ ------------------------------ */
+
+
+/* icon border colors
+ ------------------------------ */
+
+/* icon list border
+ ------------------------------ */
+
+/* =========== list styles ============= */
+/* order list
+ ------------------------------ */
+
+/* list 2
+ ------------------------------ */
+
+/* list 3
+ ------------------------------ */
+
+
+/* =========== gmaps holder ============= */
+/* order list
+ ------------------------------ */
+
+
+
+/* =========== Parallax ============= */
+
+.parallax-1 {
+	width: 100%;
+	float: left;
+	text-align: center;
+	background: url(http://via.placeholder.com/1920x1050);
+	background-attachment: fixed;
+	background-origin: initial;
+	background-clip: initial;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-position: center;
+	z-index: 1;
+}
+.parallax-overlay {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.parallax-1 {
+    background: rgba(0, 0, 0, 0) url("http://via.placeholder.com/2000x1300") no-repeat fixed 50% 0;
+}
+
+.parallax-2 {
+    background: rgba(0, 0, 0, 0) url("http://via.placeholder.com/1920x1050") no-repeat fixed 50% 0;
+}
+
+
+.parallax-3 {
+    background: rgba(0, 0, 0, 0) url("http://via.placeholder.com/1920x1050") no-repeat fixed 50% 0;
+}
+
+.parallax-4{
+    background: rgba(0, 0, 0, 0) url("http://via.placeholder.com/1920x1050") no-repeat fixed 50% 0;
+}
+
+.parallax-5 {
+	background:url(http://via.placeholder.com/1920x1050) 50% 0 no-repeat fixed;
+}
+.parallax-6 {
+	background:url(http://via.placeholder.com/1920x1050) 50% 0 no-repeat fixed;
+}
+.parallax-7 {
+	background:url(http://via.placeholder.com/1920x1050) 50% 0 no-repeat fixed;
+}
+.parallax-8 {
+	background:url(http://via.placeholder.com/1920x1050) 50% 0 no-repeat fixed;
+}
+
+ /*===============================================
+-------------------------------------------------
+	image styles
+-------------------------------------------------
+================================================*/
+
+/* image rounded
+ ------------------------------ */
+
+/* image thumnail
+ ------------------------------ */
+
+/* image cards
+ ------------------------------ */
+
+
+/* =========== modal boxes ============= */
+
+
+/* =========== pagenation ============= */
+
+.pagination {
+    border-radius: 4px;
+    display: inline-block;
+    margin: 20px 0;
+    padding-left: 0;
+}
+.pagination > li {
+    display: inline;
+}
+.pagination > li > a, .pagination > li > span {
+    color: #323335;
+    float: left;
+    line-height: 20px;
+    margin-left: -1px;
+    padding: 10px 15px;
+    text-decoration: none;
+	 background-color: #fff;
+    border: 1px solid #e4e4e4;
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    margin-left: 0;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+
+/* pagenation style 1
+ ------------------------------ */
+
+/* pagenation style 2
+ ------------------------------ */
+.pagination.style-2 > li > a {
+	border-radius:100%;
+	 margin-left: 0px;
+	 margin-right:5px;
+	 padding: 0 !important;
+	 width:40px;
+	 height:40px;
+	 line-height:37px;
+
+}
+.pagination.style-2 > li > a:hover, .pagination.style-2 > li > span:hover,
+.pagination.style-2 > li > a.active{
+    background-color: #fc4242;
+    border-color: #fc4242;
+    color: #fff;
+}
+.pagination.style-2 > li:first-child > a, .pagination.style-2 > li:last-child > a{
+	background:none;
+	border:none;
+	color:#323335;
+}
+.pagination.style-2 > li:first-child > a:hover, .pagination.style-2 > li:last-child > a:hover{
+	color:#fc4242;
+}
+
+/* pagenation style 3
+ ------------------------------ */
+
+/* pagenation style 4
+ ------------------------------ */
+
+
+/* pagenation style 5
+ ------------------------------ */
+
+
+/* pagenation pager
+ ------------------------------ */
+.pager {
+    margin: 24px 0;
+    padding-left: 0;
+    text-align: center;
+}
+.pager li a {
+    display: inline-block;
+    padding: 5px 14px;
+	border-radius: 15px;
+	background-color: #fff;
+    border: 1px solid #e4e4e4;
+}
+.pager li a:hover {
+    background-color: #e4e4e4;
+    text-decoration: none;
+}
+.pager .previous a, .pager .previous {
+    float: left;
+}
+
+/* pagenation sizes
+ ------------------------------ */
+/* pagenation hover colors
+ ------------------------------ */
+
+
+
+/* =========== pricing-tables ============= */
+
+/* price table 1
+ ------------------------------ */
+
+
+/* price table 2
+ ------------------------------ */
+
+
+/* price table 3
+ ------------------------------ */
+
+
+/* price table 4
+ ------------------------------ */
+
+
+/* price table 5
+ ------------------------------ */
+/* =========== Pricing Badges ============= */
+
+/* badge position
+ ------------------------------ */
+
+/* priceing badge sizes
+ ------------------------------ */
+
+/* priceing badge colors
+ ------------------------------ */
+
+
+/* item holders
+ ------------------------------ */
+
+
+
+
+/*============ Progress bar ============ */
+
+/*style 1
+ ------------------------------ */
+
+/*style 2
+ ------------------------------ */
+
+/*style 3
+ ------------------------------ */
+/*style 4
+ ------------------------------ */
+/*style 5
+ ------------------------------ */
+/*progress bar colors
+ ------------------------------ */
+
+
+/* =========== process steps ============= */
+
+
+/* =========== post styles ============= */
+
+
+/* post style 2
+ ------------------------------ */
+
+
+/* post style 3
+ ------------------------------ */
+
+
+/* =========== Timeline ============= */
+
+
+/* timeline colors
+ ------------------------------ */
+
+
+/* timeline style 2
+ ------------------------------ */
+
+/** timeline box structure **/
+
+/*timeline vertical bar*/
+
+/** timeline panels **/
+
+/** panel arrows **/
+
+
+/** timeline circle icons **/
+
+/*
+-----timeline dark---------
+*/
+
+/*
+-----timeline green---------
+*/
+
+
+
+
+/** media queries **/
+
+
+
+
+/* =========== social icons ============= */
+
+
+/* social icon sizes
+ ------------------------------ */
+
+/* social icon round
+ ------------------------------ */
+
+/* social icon dark
+ ------------------------------ */
+
+/* social icon light
+ ------------------------------ */
+
+
+/* social icon hover colors
+ ------------------------------ */
+/* social icon hover colors
+ ------------------------------ */
+
+/* social icon hover animation
+ ------------------------------ */
+
+
+/* social icon hover slide left
+ ------------------------------ */
+
+
+/* social icon hover slide right
+ ------------------------------ */
+
+/* social icon hover slide top
+ ------------------------------ */
+
+
+
+/* =========== Team Styles ============= */
+
+/* team style 2
+ ------------------------------ */
+
+/* team style 3
+ ------------------------------ */
+
+/* =========== Testimonials ============= */
+
+/* testimonials 2
+ ------------------------------ */
+
+
+/* =========== Tooltips ============= */
+
+/* =========== Typography ============= */
+
+
+/* =========== videos ============= */
+
+
+
+
+
+
+/* =========== Responsive Classes ============= */
+
+
+@media only screen and (max-width: 991px) {
+.container{ width:95%;}
+ thead, tbody, th, td, tr {
+display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+ul.list-padding-1 {
+	padding: 0px;
+	margin: 0px;
+}
+ul.list-padding-1 li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}

@@ -1,0 +1,134 @@
+/*-----------------------------------------------------------------------------
+
+-	Revolution Slider 5.0 Layer Style Settings -
+
+Screen Stylesheet
+
+version:   	5.0.0
+date:      	18/03/15
+author:		themepunch
+email:     	info@themepunch.com
+website:   	http://www.themepunch.com
+-----------------------------------------------------------------------------*/
+
+.tp-caption.boxshadow,.boxshadow
+{
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.5);
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.5);
+	box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.tp-caption.black,.black
+{
+	color:#000;
+	text-shadow:none;
+}
+
+.tp-caption.Gym-Display,.Gym-Display
+{
+	background-color:transparent;
+	border-color:transparent;
+	border-radius:0 0 0 0;
+	border-style:none;
+	border-width:0;
+	color:rgba(255,255,255,1.00);
+	font-family:Raleway;
+	font-size:80px;
+	font-style:normal;
+	font-weight:900;
+	line-height:70px;
+	padding:0;
+	text-decoration:none;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 960px) {} @media only screen and (max-width: 768px) {}
+
+
+
+/*============ custom classes ============ */
+
+/* hosting badges
+ ------------------------------ */
+.tp-caption.text-white{
+	color:#fff;
+}
+.tp-caption.raleway{
+	font-family: 'Raleway', sans-serif;
+}
+.tp-caption.roboto{
+	font-family: 'Roboto', sans-serif;
+}
+.tp-caption.dosis{
+	font-family: 'Dosis', sans-serif;
+}
+.tp-caption.uppercase{
+	text-transform:uppercase;
+}
+.tp-caption.bold{
+	font-weight:bold;
+}
+.tp-caption.white{
+	color:#fff;
+}
+.tp-caption.gyellow{
+	color:#ecae3d;
+}
+.tp-caption.dark{
+	color:#101010;
+}
+.tp-caption.fweight-8{
+	font-weight:800;
+}
+.tp-caption.text-light{
+	color:#959595;
+}
+
+/* letter spacing
+ ------------------------------ */
+
+
+/*============ template slider button styles =================*/
+
+.tp-caption.btn-large a{
+	padding:15px 50px !important;
+}
+
+/*----------------------------RESPONSIVE STYLES------------------------------- */
+/* ---------- MAX 1024PX ---------- */
+
+
+
+
+
+/* ---------- MAX 991PX ---------- */
+
+
+
+/* ---------- MAX 800PX ---------- */
+
+
+
+/* ---------- MAX 768PX ---------- */
+
+
+/* ---------- MAX 767PX ---------- */
+@media only screen and (max-width: 767px) {
+
+}
+
+
+@media screen and (max-width: 480px) {
+.tp-caption.btn-large a{
+	padding:10px 20px !important;
+}
+
+
+
+}
+
+/* ---------- MAX 360PX ---------- */
+
+
+/* ---------- MAX 320PX ---------- */

@@ -1,0 +1,110 @@
+/*	Responsive Tabs v1.4, Copyright 2014, Joe Mottershaw, https://github.com/joemottershaw/
+//	======================================================================================= */
+
+/*	Table of Contents
+//	==================================================
+//		#Reset
+//		#Themes
+
+
+/*	#Reset
+//	================================================== */
+
+	/* Standard */
+.responsive-tabs {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style-type: none;
+	position: relative;
+	background-color: #fc4242;
+}
+.responsive-tabs li {
+	width: 125px;
+	margin: 0;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+	padding: 0;
+	background-color: #242424;
+}
+.responsive-tabs li a {
+	display: block;
+	padding: 0px;
+	text-align: center;
+	line-height: 23px;
+	text-decoration: none;
+}
+.responsive-tabs li.active {
+	font-weight: bold;
+	background-color: #fff;
+}
+.responsive-tabs-content {
+	margin-bottom: 20px;
+}
+.responsive-tabs-content .responsive-tabs-panel {
+	padding: 0px 0 0 0;
+}
+.responsive-tabs-content .responsive-tabs-panel .responsive-tab-title {
+	display: none;
+}
+/* Tabs Left */
+/* Tabs Right */
+ @media only screen and (max-width: 767px) {
+.responsive-tabs li {
+	display: none;
+}
+.responsive-tabs-content .responsive-tabs-panel,  .responsive-tabs-content .responsive-tabs-panel .responsive-tab-title {
+	display: block;
+}
+}
+/*	#Themes
+//	================================================== */
+
+	/* Standard */
+/* Tabs Left */
+/* Tabs Right */
+
+/*custom styles*/
+
+
+
+/* Tab atyle 2
+ ------------------------------ */
+
+
+
+/* Tab atyle 3
+ ------------------------------ */
+
+
+/* Tab atyle 4
+ ------------------------------ */
+
+
+/* Tab atyle 5
+ ------------------------------ */
+
+/* Tab atyle 6
+ ------------------------------ */
+
+
+
+
+
+/* Tab atyle 7
+ ------------------------------ */
+
+
+/* Tab atyle 8
+ ------------------------------ */
+
+
+/* Tab atyle 9
+ ------------------------------ */
+
+
+/* =========== left Tab style 1 ==========  */
+
+/* =========== left Tab style 2 ==========  */
