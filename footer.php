@@ -3,18 +3,20 @@
         <div class="row">
             <div class="col-md-3 col-sm-12 office-address colmargin clearfix margin-bottom">
                 <div class="fo-map">
-                    <div class="footer-logo"><img class="foot-logo" src="images/logo/logo.svg" width="230" alt="" /></div>
+                    <div class="footer-logo"><img class="foot-logo" src="images/logo/logo.svg" width="230" alt=""/>
+                    </div>
                     <address>
                         <strong class="text-white opacity-5">Address:</strong>
-                        <br />
+                        <br/>
                         <p class="text-white opacity-5">House 8, Road 4, Section 11,
-                            <br />
+                            <br/>
                             Mirpur, Dhaka, Bangladesh
                         </p>
                     </address>
 
                     <span class="text-white opacity-5"><strong>Phone:</strong> +(88) 09611 888 444</span><br>
-                    <span><strong class="text-white opacity-5">Email:</strong> <a href="mailto:info@genuitysystems.com" class="opacity-link-light">info@genuitysystems.com</a> </span><br>
+                    <span><strong class="text-white opacity-5">Email:</strong> <a href="mailto:info@genuitysystems.com"
+                                                                                  class="opacity-link-light">info@genuitysystems.com</a> </span><br>
 
                     <div class="g-certificate">
                         <img class="img-fluid" src="images/iso.png" alt="">
@@ -23,7 +25,7 @@
                     </div>
                 </div>
 
-               
+
             </div>
             <!--end item-->
 
@@ -87,7 +89,7 @@
                     <li><a href="voice_analytics.php" class="opacity-link-light">Voice Analytics</a></li>
                     <li><a href="virtual_desk.php" class="opacity-link-light">Virtual Desk</a></li>
                     <li><a href="bpo_service.php" class="opacity-link-light">BPO Service</a></li>
-                   
+
                 </ul>
             </div>
 
@@ -100,8 +102,8 @@
                     <li><a href="healthcare.php" class="opacity-link-light">Healthcare</a></li>
                     <li><a href="education.php" class="opacity-link-light">Education</a></li>
                     <li><a href="e_commerce.php" class="opacity-link-light">E-Commerce</a></li>
-					<li><a href="bpo.php" class="opacity-link-light">BPO</a></li>
-					<li><a href="tourism.php" class="opacity-link-light">Tourism</a></li>
+                    <li><a href="bpo.php" class="opacity-link-light">BPO</a></li>
+                    <li><a href="tourism.php" class="opacity-link-light">Tourism</a></li>
                 </ul>
             </div>
 
@@ -131,13 +133,17 @@
             <div class="col-md-6 col-sm-12 col-xs-12 text-right respo">
                 <ul class="footer-social-icons round">
                     <li><a target="_blank" class="twitter" href="https://twitter.com/GenuityLtd">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-</svg></a></li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                 class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                            </svg>
+                        </a></li>
                     <li><a target="_blank" href="https://www.facebook.com/genuitysystems"><i class="fa fa-facebook"></i></a>
                     </li>
-                    <li><a href="https://www.linkedin.com/company/genuitysystems" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.youtube.com/@genuitysystems.2003" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/genuitysystems" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/@genuitysystems.2003" target="_blank"><i
+                                    class="fa fa-youtube"></i></a></li>
                 </ul>
             </div>
 
@@ -179,99 +185,111 @@
     $(".openTabby2").openTabby2();
     $(".openTabby3").openTabby3();
 
-    $('#capreload').click(function() {
+    $('#capreload').click(function () {
         // alert('help');
         d = new Date();
-        $("#captchax").attr("src", "lib/loginCaptchaImage.php?"+d.getTime());
+        $("#captchax").attr("src", "lib/loginCaptchaImage.php?" + d.getTime());
         $('#captcha').val("");
     });
-    $("#contactform").submit(function(ev){
-        var cssObj = { 'border' : '1px solid #FF0000' };
+    $("#contactform").submit(function (ev) {
+        var cssObj = {'border': '1px solid #FF0000'};
         ev.preventDefault();
         console.log($("#sendername").val());
-        if($("#sendername").val() == "undefined" || $("#sendername").val() == ""){
+        if ($("#sendername").val() == "undefined" || $("#sendername").val() == "") {
             errormsg("Name is Required.");
             $("#sendername").css(cssObj);
-        }else if($("#emailaddress").val() == ""){
+        } else if ($("#emailaddress").val() == "") {
             errormsg("E-Mail is Required.");
             $("#emailaddress").css(cssObj);
-        }else if(!IsEmail($("#emailaddress").val())){
+        } else if (!IsEmail($("#emailaddress").val())) {
             errormsg("Invalid E-mail Address.");
             $("#emailaddress").css(cssObj);
-        }else if($("#sendermessage").val() == ""){
+        } else if ($("#sendermessage").val() == "") {
             errormsg("Message is Required!");
             $("#sendermessage").css(cssObj);
-        }else if($("#captcha").val() == ""){
+        } else if ($("#captcha").val() == "") {
             errormsg("Security Code is Required.");
             $("#captcha").css(cssObj);
-        }else {
+        } else {
             var capText = $('#captcha').val();
             $.ajax({
                 type: "POST",
                 dataType: "json",
                 url: "lib/reloadcap.php",
-                data: { act: 'check', capchatxt: capText },
-                beforeSend: function() {
+                data: {act: 'check', capchatxt: capText},
+                beforeSend: function () {
                     // ShowWait(true);
                 },
-                success: function(data){
-                    if(typeof(data) !== "undefined" && data != ""){
-                        if(data == "captrue"){
+                success: function (data) {
+                    if (typeof (data) !== "undefined" && data != "") {
+                        if (data == "captrue") {
                             sendEMail();
-                        }else{
+                        } else {
                             d = new Date();
-                            $("#captchax").attr("src", "lib/loginCaptchaImage.php?"+d.getTime());
+                            $("#captchax").attr("src", "lib/loginCaptchaImage.php?" + d.getTime());
                             $('#captcha').val("");
                             return false;
                         }
                     }
                 },
-                complete:function(){
+                complete: function () {
 
                 },
-                error:function(){
+                error: function () {
                     console.log("ERROR In Capture");
                     // ShowWait(false);
                 }
             });
         }
     });
+
     function IsEmail(email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
-    function errormsg(msg){
+
+    function errormsg(msg) {
         alert(msg);
     }
-    function sendEMail(){
+
+    function sendEMail() {
         msubject = "New Message from " + $("#name").val();
-        var pData = { fname: $("#sendername").val(), subject: msubject, mail: $("#emailaddress").val(), telephone: $("#telephone").val(), service: $("#sendersubject").val(), comment: $("#sendermessage").val(), captxt: $("#captcha").val(), act: "sendmail" };
+        var pData = {
+            fname: $("#sendername").val(),
+            subject: msubject,
+            mail: $("#emailaddress").val(),
+            telephone: $("#telephone").val(),
+            service: $("#sendersubject").val(),
+            comment: $("#sendermessage").val(),
+            captxt: $("#captcha").val(),
+            act: "sendmail"
+        };
         $.ajax({
             type: "POST",
             dataType: "json",
             url: "lib/reloadcap.php",
             data: pData,
-            beforeSend: function() {
+            beforeSend: function () {
                 // ShowWait(true);
             },
-            success: function(data){
-                if(typeof(data) !== "undefined" && data != ""){
-                    if(data == "success"){
+            success: function (data) {
+                if (typeof (data) !== "undefined" && data != "") {
+                    if (data == "success") {
                         alert("Mail send successfully");
-                    }else{
+                    } else {
                         alert(data);
                     }
                 }
                 console.log(data);
             },
-            complete:function(){
+            complete: function () {
 
             },
-            error:function(data){
+            error: function (data) {
                 errormsg(data);
-				d = new Date();
-				$("#captchax").attr("src", "lib/loginCaptchaImage.php?"+d.getTime());
-				$('#captcha').val("");
+                d = new Date();
+                $("#captchax").attr("src", "lib/loginCaptchaImage.php?" + d.getTime());
+                $('#captcha').val("");
                 console.log("ERROR");
                 // ShowWait(false);
             }
@@ -281,129 +299,13 @@
 
 <script src="js/parallax/parallax-background.min.js"></script>
 <script>
-    (function($) {
+    (function ($) {
         $('.parallax').parallaxBackground();
-
     })(jQuery);
 </script>
 
 <script src='js/offcanvas/offcanvas.js'></script>
-
-<!-- REVOLUTION JS FILES -->
-<script type="text/javascript" src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
-<!-- SLIDER REVOLUTION 5.0 EXTENSIONS
-(Load Extensions only on Local File Systems !
-The following part can be removed on Server for On Demand Loading) -->
-
-<!-- <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script> -->
 <script type="text/javascript" src="js/smart-forms/jquery.validate.min.js"></script>
-<script type="text/javascript">
-    var tpj = jQuery;
-    var revapi4;
-    tpj(document).ready(function() {
-        if (tpj("#rev_slider").revolution == undefined) {
-            revslider_showDoubleJqueryError("#rev_slider");
-        } else {
-            revapi4 = tpj("#rev_slider").show().revolution({
-                sliderType: "standard",
-                jsFileLocation: "js/revolution-slider/js/",
-                sliderLayout: "auto",
-                dottedOverlay: "none",
-                delay: 9000,
-                navigation: {
-                    keyboardNavigation: "off",
-                    keyboard_direction: "horizontal",
-                    mouseScrollNavigation: "off",
-                    onHoverStop: "off",
-                    lazyType: "smart",
-                    arrows: {
-                        style: "uranus",
-                        enable: true,
-                        hide_onmobile: false,
-                        hide_under: 100,
-                        hide_onleave: true,
-                        hide_delay: 200,
-                        hide_delay_mobile: 1200,
-                        tmp: '',
-                        left: {
-                            h_align: "left",
-                            v_align: "center",
-                            h_offset: 35,
-                            v_offset: 0
-                        },
-                        right: {
-                            h_align: "right",
-                            v_align: "center",
-                            h_offset: 35,
-                            v_offset: 0
-                        }
-                    },
-                    touch: {
-                        touchenabled: "on",
-                        swipe_threshold: 75,
-                        swipe_min_touches: 1,
-                        swipe_direction: "horizontal",
-                        drag_block_vertical: false
-                    },
-
-
-                },
-                viewPort: {
-                    enable: true,
-                    outof: "pause",
-                    visible_area: "80%"
-                },
-
-                // responsiveLevels:[1920,1600,1440,1240,1024,992,778,480],
-                // gridwidth:[1920,1600,1440,1240,1024,992,778,480],
-                //  gridheight: [650,750,500,360],
-
-                //Fixme: Code for Large Devices
-                responsiveLevels: [3840, 2560, 1920, 1600, 1440, 1240, 1024, 992, 778, 480, 300],
-                gridwidth: [3840, 2560, 1920, 1600, 1440, 1240, 1024, 992, 778, 480, 300],
-                gridheight: [700, 600, 600, 600, 600, 600, 300, 280, 250],
-
-
-                lazyType: "smart",
-                parallax: {
-                    type: "mouse",
-                    origo: "slidercenter",
-                    speed: 2000,
-                    levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
-                },
-                shadow: 0,
-                spinner: "off",
-                stopLoop: "off",
-                stopAfterLoops: -1,
-                stopAtSlide: -1,
-                shuffle: "off",
-                autoHeight: "off",
-                hideThumbsOnMobile: "off",
-                hideSliderAtLimit: 0,
-                hideCaptionAtLimit: 0,
-                hideAllCaptionAtLilmit: 0,
-                disableProgressBar: "on",
-                debugMode: false,
-                fallbacks: {
-                    simplifyAll: "off",
-                    nextSlideOnWindowFocus: "off",
-                    disableFocusListener: false,
-                }
-            });
-        }
-    }); /*ready*/
-</script>
-
-
 <script src="js/jFlickrFeed/jflickrfeed.min.js"></script>
 <script>
     $('#basicuse').jflickrfeed({
@@ -418,14 +320,111 @@ The following part can be removed on Server for On Demand Loading) -->
 </script>
 
 <script>
-    $(window).load(function() {
-        setTimeout(function() {
+    $(window).load(function () {
+        setTimeout(function () {
 
             $('.loader-live').fadeOut();
         }, 100);
     })
 </script>
 <script src="js/functions/functions.js"></script>
+<script>
+    (function () {
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.nav-dot');
+        const totalSlides = slides.length;
+        let autoSlideInterval;
+
+        function showSlide(index) {
+            // Remove active class from all slides and dots
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            // Add active class to current slide and dot
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            const next = (currentSlide + 1) % totalSlides;
+            showSlide(next);
+        }
+
+        function changeSlide(direction) {
+            const newSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            showSlide(newSlide);
+            resetAutoSlide();
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 5000);
+        }
+
+        // Initialize
+        showSlide(0);
+        startAutoSlide();
+
+        // Dot navigation
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+                resetAutoSlide();
+            });
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+        });
+
+        // Pause on hover
+        const sliderContainer = document.querySelector('.slider-container');
+        sliderContainer.addEventListener('mouseenter', () => {
+            clearInterval(autoSlideInterval);
+        });
+
+        sliderContainer.addEventListener('mouseleave', () => {
+            startAutoSlide();
+        });
+
+        // Touch/swipe support
+        let startX = 0;
+        let endX = 0;
+
+        sliderContainer.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        sliderContainer.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = startX - endX;
+
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    changeSlide(1); // Swipe left - next slide
+                } else {
+                    changeSlide(-1); // Swipe right - previous slide
+                }
+            }
+        }
+
+    })();
+</script>
 </body>
 
 </html>

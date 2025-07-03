@@ -5,145 +5,56 @@
 
 <div class="clearfix"></div>
 
-<!-- START REVOLUTION SLIDER 5.0 -->
-<div>
-  <div class="slidermaxwidth">
-    <div class="rev_slider_wrapper">
-      <!-- START REVOLUTION SLIDER 5.0 auto mode -->
-      <div id="rev_slider" class="rev_slider" data-version="5.0">
-        <ul>
-
-          <!-- SLIDE  -->
-          <li data-index="rs-1" data-transition="fade" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-description="">
-
-            <!-- MAIN IMAGE -->
-            <img src="images/ban3.jpg" alt="genuity_systems_limited" data-bgposition="center center" data-kenburns="off" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-
-            <!-- LAYER NR. 1 -->
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-1-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['-40%','-40%','-40%','-40%']" data-fontsize="['35','50','45','18']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left; color:#263B49;"><span class="brand-logo">g</span>P<span class="brand-logo2">lex</span> Contact Center
+<!--New Slider Incorporated-->
+<div class="slider-container">
+    <!-- Slide 1 -->
+    <div class="slide active" style="background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPGF0dGVybiBpZD0iZ3JhZGllbnQiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzI0MzU0ZSIvPgo8Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIxLjUiIGZpbGw9IiM0NzU0NjkiLz4KPC9wYXR0ZXJuPgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9InVybCgjZ3JhZGllbnQpIi8+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9InVybCgjZ3JhZGllbnQpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzNiNGNmMTtzdG9wLW9wYWNpdHk6MSIgLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNmM1Y2UzO3N0b3Atb3BhY2l0eToxIiAvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9InVybCgjZ3JhZGllbnQpIi8+Cjwvc3ZnPgo=');">
+        <div class="slide-content">
+            <h1 class="slide-title">Innovation Drives Success</h1>
+            <p class="slide-paragraph">Transform your business with cutting-edge solutions that deliver measurable results. We combine strategic thinking with technological excellence to create sustainable competitive advantages.</p>
+            <div class="slide-cta">
+                <a href="#" class="cta-button">Explore Solutions</a>
             </div>
-
-            <!-- LAYER NR. 2 -->
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['20%','20%','20%','20%']" data-fontsize="['58','50','35','16']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1200,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left;">
-              <p class="customer">Enhancing Customer Experience </p>
-            </div>
-
-            <!-- LAYER NR. 3 -->
-            <!-- <div class="tp-caption slider-button-2 uppercase" id="slide-1-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['center','center','center','center']" data-voffset="['90%','90%','90%','90%']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":1000,"to":"o:1;","delay":2300,"ease":"Power4.easeInOut"},{"delay":"wait","speed":700,"to":"y:[175%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power2.easeOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;"}]' data-textAlign="['center','center','center','center']" style="z-index: 6"><a href="#">Learn More
-                &nbsp; <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-            </div> -->
-
-          </li>
-
-
-          <!-- SLIDE  -->
-          <li data-index="rs-2" data-transition="slideup" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-description="">
-
-            <!-- MAIN IMAGE -->
-            <img src="images/ban1.jpg" alt="genuity_systems_limited" data-bgposition="center center" data-kenburns="off" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-
-            <!-- LAYER NR. 1 -->
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-2-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['-40%','-40%','-40%','-40%']" data-fontsize="['35','50','45','18']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left; color:#FFFF76"><span class="shadow">Solution for Sustainable Business Growth</span> 
-            </div>
-
-            <!-- LAYER NR. 2 -->
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-2-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['20%','20%','20%','20%']" data-fontsize="['58','50','35','16']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1200,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left; color:#ffffff;">
-              <p class="customer-ban shadow">start your journey today</p>
-            </div>
-
-            <!-- LAYER NR. 3 -->
-            <!-- <div class="tp-caption slider-button-2 uppercase" id="slide-2-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['center','center','center','center']" data-voffset="['90%','90%','90%','90%']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":1000,"to":"o:1;","delay":2300,"ease":"Power4.easeInOut"},{"delay":"wait","speed":700,"to":"y:[175%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power2.easeOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;"}]' data-textAlign="['center','center','center','center']" style="z-index: 6"><a href="#">Learn More
-                &nbsp; <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-            </div> -->
-
-          </li>
-
-          <!-- SLIDE-3  -->
-          <li data-index="rs-3" data-transition="slideup" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-description="">
-
-
-            <img src="images/ban03.jpg" alt="genuity_systems_limited" data-bgposition="center center" data-kenburns="off" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-
-
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-3-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['-40%','-40%','-40%','-40%']" data-fontsize="['35','50','45','18']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left;"><p class="ban-text shadow">Unlocking Potential with <span style="color:#ff5050">"AI"</span> </p>
-            </div>
-
-
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-3-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['20%','20%','20%','20%']" data-fontsize="['58','50','35','16']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1200,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left;">
-              <p class="customer-ban1 shadow">Business Impact and Innovation</p>
-            </div>
-
-
-            <!-- <div class="tp-caption slider-button-2 uppercase" id="slide-2-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['center','center','center','center']" data-voffset="['90%','90%','90%','90%']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":1000,"to":"o:1;","delay":2300,"ease":"Power4.easeInOut"},{"delay":"wait","speed":700,"to":"y:[175%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power2.easeOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;"}]' data-textAlign="['center','center','center','center']" style="z-index: 6"><a href="#">Learn More
-                &nbsp; <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-            </div> -->
-
-          </li>
-
-          <!-- SLIDE-4  -->
-          <li data-index="rs-4" data-transition="slideup" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-description="">
-
-
-            <img src="images/ban04.jpg" alt="genuity_systems_limited" data-bgposition="center center" data-kenburns="off" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-
-
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-3-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['-40%','-40%','-40%','-40%']" data-fontsize="['58','50','45','18']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left;"><p class="ban-text shadow">Transforming Conversations</p>
-            </div>
-
-
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-3-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['20%','20%','20%','20%']" data-fontsize="['58','50','35','16']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1200,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left;">
-              <p class="customer-ban2 shadow">Elevating Efficiency & Engagement</p>
-            </div>
-
-
-            <!-- <div class="tp-caption slider-button-2 uppercase" id="slide-2-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['center','center','center','center']" data-voffset="['90%','90%','90%','90%']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":1000,"to":"o:1;","delay":2300,"ease":"Power4.easeInOut"},{"delay":"wait","speed":700,"to":"y:[175%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power2.easeOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;"}]' data-textAlign="['center','center','center','center']" style="z-index: 6"><a href="#">Learn More
-                &nbsp; <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-            </div> -->
-
-          </li>
-
-          <li data-index="rs-5" data-transition="slideup" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-description="">
-
-
-            <img src="images/ban05.jpg" alt="genuity_systems_limited" data-bgposition="center center" data-kenburns="off" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-
-
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-3-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['-40%','-40%','-40%','-40%']" data-fontsize="['35','50','45','18']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left;"><p class="ban-text shadow">Leading Contact Center & AI Solution Provider</p>
-            </div>
-
-
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-3-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['20%','20%','20%','20%']" data-fontsize="['58','50','35','16']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1200,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left;">
-              <p class="customer-ban5 shadow"><span class="text-transfrom">sister concern of</span> Genusys Inc, usa</p>
-            </div>
-
-          </li>
-
-          <li data-index="rs-6" data-transition="slideup" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-description="">
-
-
-            <img src="images/ban06.jpg" alt="genuity_systems_limited" data-bgposition="center center" data-kenburns="off" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-
-
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-3-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['-40%','-40%','-40%','-40%']" data-fontsize="['35','50','45','22']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left;"><p class="ban-text"></p>
-            </div>
-
-
-            <div class="tp-caption Gym-Display fweight-8 white uppercase tp-resizeme" id="slide-3-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','10','10','10']" data-y="['center','center','center','center']" data-voffset="['20%','20%','20%','20%']" data-fontsize="['58','50','35','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1200,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left;">
-              <p class="customer-ban5"></p>
-            </div>
-
-          </li>
-
-
-        </ul>
-        <!-- END REVOLUTION SLIDER -->
-      </div>
+        </div>
     </div>
-  </div>
-  <!-- END REVOLUTION SLIDER WRAPPER -->
+
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPGF0dGVybiBpZD0iZ3JhZGllbnQyIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiPgo8cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIGZpbGw9IiMxOTJkMzkiLz4KPHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0iIzI5NDU1ZSIvPgo8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSIjMzc0MTUxIi8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI2dyYWRpZW50MikiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQyIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBkN2R0NzY7c3RvcC1vcGFjaXR5OjEiIC8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzNiNGNmMTtzdG9wLW9wYWNpdHk6MSIgLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI2dyYWRpZW50MikiLz4KPC9zdmc+Cg==');">
+        <div class="slide-content">
+            <h1 class="slide-title">Global Excellence</h1>
+            <p class="slide-paragraph">Partner with industry leaders who understand your vision. Our proven track record spans across continents, delivering world-class results that exceed expectations and drive meaningful growth.</p>
+            <div class="slide-cta">
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" style="background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPGF0dGVybiBpZD0iZ3JhZGllbnQzIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB3aWR0aD0iODAiIGhlaWdodD0iODAiPgo8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iODAiIGZpbGw9IiMxZTI5M2IiLz4KPHBhdGggZD0iTTAgMGg4MHY4MEgweiIgZmlsbD0iIzJkNDA1YSIvPgo8Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIyIiBmaWxsPSIjNDA1MDY5Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI2dyYWRpZW50MykiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQzIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzY2N2VlYTtzdG9wLW9wYWNpdHk6MSIgLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNzY0YmEyO3N0b3Atb3BhY2l0eToxIiAvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9InVybCgjZ3JhZGllbnQzKSIvPgo8L3N2Zz4K');">
+        <div class="slide-content">
+            <h1 class="slide-title">Future-Ready Solutions</h1>
+            <p class="slide-paragraph">Stay ahead of the curve with innovative technologies and strategic insights. We help organizations navigate digital transformation while maintaining operational excellence and sustainable growth.</p>
+            <div class="slide-cta">
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="slider-nav">
+        <span class="nav-dot active" data-slide="0"></span>
+        <span class="nav-dot" data-slide="1"></span>
+        <span class="nav-dot" data-slide="2"></span>
+    </div>
+
+    <!-- Arrows -->
+    <button class="g-arrow g-arrow-left" onclick="changeSlide(-1)">‹</button>
+    <button class="g-arrow g-arrow-right" onclick="changeSlide(1)">›</button>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
 </div>
-<div class="clearfix"></div>
-<!-- END OF SLIDER WRAPPER -->
+<!--New Slider Incorporated-->
 
 <section class="sec-padding section-secondary">
   <div class="container">
@@ -689,7 +600,7 @@
       <div class="col-md-7 text-left">
         <div class="feature-box-17">
           <h4 class="big-title montserrat font-weight-6 text-secondary padding-top-6 customer"> All Digital
-            
+
             Channels <br />
             in One Platform!
           </h4>
