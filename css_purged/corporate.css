@@ -1338,8 +1338,12 @@ Design and Developed by: Codelayers
 }
 
 @keyframes progress {
-    0% { transform: scaleX(0); }
-    100% { transform: scaleX(1); }
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1399,6 +1403,7 @@ Design and Developed by: Codelayers
         right: 10px;
     }
 }
+
 /*End Style For Slider*/
 
 
