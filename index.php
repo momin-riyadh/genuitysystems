@@ -8,13 +8,16 @@
 <!--New Slider Incorporated-->
 <div class="slider-container">
     <!-- Slide 1 -->
-    <div class="slide active"
-         style="background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPGF0dGVybiBpZD0iZ3JhZGllbnQiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzI0MzU0ZSIvPgo8Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIxLjUiIGZpbGw9IiM0NzU0NjkiLz4KPC9wYXR0ZXJuPgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9InVybCgjZ3JhZGllbnQpIi8+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9InVybCgjZ3JhZGllbnQpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzNiNGNmMTtzdG9wLW9wYWNpdHk6MSIgLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNmM1Y2UzO3N0b3Atb3BhY2l0eToxIiAvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9InVybCgjZ3JhZGllbnQpIi8+Cjwvc3ZnPgo=');">
+    <div class="slide active">
+        <div class="slide-bg">
+            <picture>
+                <source srcset="images/ban3.jpg" media="(min-width: 768px)" />
+                <img src="images/ban3-small.jpg" alt="Innovation and Technology" />
+            </picture>
+        </div>
         <div class="slide-content">
-            <h1 class="slide-title">Innovation Drives Success</h1>
-            <p class="slide-paragraph">Transform your business with cutting-edge solutions that deliver measurable
-                results. We combine strategic thinking with technological excellence to create sustainable competitive
-                advantages.</p>
+            <h1 class="slide-title">gPlex Contact Center</h1>
+            <p class="slide-paragraph">Enhancing Customer Experience</p>
             <div class="slide-cta">
                 <a href="#" class="cta-button">Explore Solutions</a>
             </div>
@@ -22,13 +25,16 @@
     </div>
 
     <!-- Slide 2 -->
-    <div class="slide"
-         style="background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPGF0dGVybiBpZD0iZ3JhZGllbnQyIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiPgo8cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIGZpbGw9IiMxOTJkMzkiLz4KPHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0iIzI5NDU1ZSIvPgo8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSIjMzc0MTUxIi8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI2dyYWRpZW50MikiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQyIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBkN2R0NzY7c3RvcC1vcGFjaXR5OjEiIC8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzNiNGNmMTtzdG9wLW9wYWNpdHk6MSIgLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI2dyYWRpZW50MikiLz4KPC9zdmc+Cg==');">
+    <div class="slide">
+        <div class="slide-bg">
+            <picture>
+                <source srcset="images/ban1.jpg" media="(min-width: 768px)" />
+                <img src="https://placehold.co/600x400/000000/FFFF00/png" alt="Global Excellence" />
+            </picture>
+        </div>
         <div class="slide-content">
-            <h1 class="slide-title">Global Excellence</h1>
-            <p class="slide-paragraph">Partner with industry leaders who understand your vision. Our proven track record
-                spans across continents, delivering world-class results that exceed expectations and drive meaningful
-                growth.</p>
+            <h1 class="slide-title">Solution for Sustainable Business Growth</h1>
+            <p class="slide-paragraph">Start Your Journey Today</p>
             <div class="slide-cta">
                 <a href="#" class="cta-button">Learn More</a>
             </div>
@@ -36,13 +42,67 @@
     </div>
 
     <!-- Slide 3 -->
-    <div class="slide"
-         style="background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPGF0dGVybiBpZD0iZ3JhZGllbnQzIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB3aWR0aD0iODAiIGhlaWdodD0iODAiPgo8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iODAiIGZpbGw9IiMxZTI5M2IiLz4KPHBhdGggZD0iTTAgMGg4MHY4MEgweiIgZmlsbD0iIzJkNDA1YSIvPgo8Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIyIiBmaWxsPSIjNDA1MDY5Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI2dyYWRpZW50MykiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQzIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzY2N2VlYTtzdG9wLW9wYWNpdHk6MSIgLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNzY0YmEyO3N0b3Atb3BhY2l0eToxIiAvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9InVybCgjZ3JhZGllbnQzKSIvPgo8L3N2Zz4K');">
+    <div class="slide">
+        <div class="slide-bg">
+            <picture>
+                <source srcset="images/ban03.jpg" media="(min-width: 768px)" />
+                <img src="https://placehold.co/600x400/000000/FF00FF/png" alt="Future-Ready Solutions" />
+            </picture>
+        </div>
         <div class="slide-content">
             <h1 class="slide-title">Future-Ready Solutions</h1>
-            <p class="slide-paragraph">Stay ahead of the curve with innovative technologies and strategic insights. We
-                help organizations navigate digital transformation while maintaining operational excellence and
-                sustainable growth.</p>
+            <p class="slide-paragraph">Stay ahead of the curve with innovative technologies and strategic insights. We help organizations navigate digital transformation while maintaining operational excellence and sustainable growth.</p>
+            <div class="slide-cta">
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+        <div class="slide-bg">
+            <picture>
+                <source srcset="images/ban04.jpg" media="(min-width: 768px)" />
+                <img src="https://picsum.photos/500/400" alt="Future-Ready Solutions" />
+            </picture>
+        </div>
+        <div class="slide-content">
+            <h1 class="slide-title">Future-Ready Solutions</h1>
+            <p class="slide-paragraph">Stay ahead of the curve with innovative technologies and strategic insights. We help organizations navigate digital transformation while maintaining operational excellence and sustainable growth.</p>
+            <div class="slide-cta">
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+        <div class="slide-bg">
+            <picture>
+                <source srcset="images/ban05.jpg" media="(min-width: 768px)" />
+                <img src="https://picsum.photos/500/400" alt="Future-Ready Solutions" />
+            </picture>
+        </div>
+        <div class="slide-content">
+            <h1 class="slide-title">Future-Ready Solutions</h1>
+            <p class="slide-paragraph">Stay ahead of the curve with innovative technologies and strategic insights. We help organizations navigate digital transformation while maintaining operational excellence and sustainable growth.</p>
+            <div class="slide-cta">
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+        <div class="slide-bg">
+            <picture>
+                <source srcset="images/ban06.jpg" media="(min-width: 768px)" />
+                <img src="https://picsum.photos/500/400" alt="Future-Ready Solutions" />
+            </picture>
+        </div>
+        <div class="slide-content">
+            <h1 class="slide-title">Future-Ready Solutions</h1>
+            <p class="slide-paragraph">Stay ahead of the curve with innovative technologies and strategic insights. We help organizations navigate digital transformation while maintaining operational excellence and sustainable growth.</p>
             <div class="slide-cta">
                 <a href="#" class="cta-button">Get Started</a>
             </div>
@@ -54,15 +114,19 @@
         <span class="nav-dot active" data-slide="0"></span>
         <span class="nav-dot" data-slide="1"></span>
         <span class="nav-dot" data-slide="2"></span>
+        <span class="nav-dot" data-slide="3"></span>
+        <span class="nav-dot" data-slide="4"></span>
+        <span class="nav-dot" data-slide="5"></span>
     </div>
 
     <!-- Arrows -->
-    <button class="g-arrow g-arrow-left" onclick="changeSlide(-1)">‹</button>
-    <button class="g-arrow g-arrow-right" onclick="changeSlide(1)">›</button>
+    <button class="g-arrow g-arrow-left">‹</button>
+    <button class="g-arrow g-arrow-right">›</button>
 
     <!-- Progress Bar -->
     <div class="progress-bar"></div>
 </div>
+
 <!--New Slider Incorporated-->
 
 <section class="sec-padding section-secondary">
