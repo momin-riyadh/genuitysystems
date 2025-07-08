@@ -329,7 +329,7 @@
 </script>
 <script src="js/functions/functions.js"></script>
 <script>
-    (function () {
+  
         document.addEventListener('DOMContentLoaded', function () {
             let currentSlide = 0;
             const slides = document.querySelectorAll('.slide');
@@ -464,7 +464,7 @@
             showSlide(0);
             startAutoSlide();
         });
-    })();
+
 </script>
 </body>
 
