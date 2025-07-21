@@ -1,16 +1,16 @@
 <?php include('header.php') ?>
-<section class="page-title-4 address">
+<section class="page-title-4 g-blog">
     <div class="container">
         <div class="row">
 
             <h1 class="font-weight-8 text-center">Blog </h1>
-            <h5 class="font-weight-5 text-center less2">Stay updated with our latest insights and articles on
+            <h5 class="font-weight-5 text-center">Stay updated with our latest insights and articles on
                 technology, innovation, and industry trends.</h5>
 
         </div>
     </div>
 </section>
-<section class="sec-padding">
+<section class="section-blog">
     <div class="container">
         <div class="row">
 
@@ -119,10 +119,10 @@
 </section>
 
 <!-- Pagination Component -->
-<div class="pagination-container container">
+<div class="container">
     <div class="row">
         <div class="col-md-12 d-flex justify-content-center align-items-center">
-            <nav aria-label="Blog pagination">
+            <nav aria-label="Blog pagination" class="custom-pagination-wrapper">
                 <ul class="custom-pagination">
                     <!-- Previous Button -->
                     <li class="page-item disabled">
