@@ -121,7 +121,7 @@
 <!-- Pagination Component -->
 <div class="pagination-container container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 d-flex justify-content-center align-items-center">
             <nav aria-label="Blog pagination">
                 <ul class="custom-pagination">
                     <!-- Previous Button -->
