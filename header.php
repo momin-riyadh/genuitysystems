@@ -25,6 +25,7 @@
 
 
     <!-- Template's stylesheets -->
+    <link rel="stylesheet" href="blog/assets/blog.css">
     <link rel="stylesheet" href="js/megamenu/stylesheets/screen.css">
     <link rel="stylesheet" href="css/theme-default.css" type="text/css">
     <link rel="stylesheet" href="js/loaders/stylesheets/screen.css">
