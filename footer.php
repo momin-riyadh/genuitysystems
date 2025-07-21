@@ -23,7 +23,7 @@
                     </div>
                 </div>
 
-               
+
             </div>
             <!--end item-->
 
@@ -87,7 +87,7 @@
                     <li><a href="voice_analytics.php" class="opacity-link-light">Voice Analytics</a></li>
                     <li><a href="virtual_desk.php" class="opacity-link-light">Virtual Desk</a></li>
                     <li><a href="bpo_service.php" class="opacity-link-light">BPO Service</a></li>
-                   
+
                 </ul>
             </div>
 
