@@ -14,10 +14,10 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <div class="col-md-6 col-sm-6 col-xs-12 ">
                 <div class="blog-post">
                     <div class="post-img">
-                        <img src="https://picsum.photos/600/300" alt="" class="img-responsive">
+                        <img src="https://picsum.photos/600/300?random" alt="" class="img-responsive">
                     </div>
                     <div class="post-info">
                         <div class="post-date">
@@ -31,10 +31,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6 col-xs-12 mb-5">
+            <div class="col-md-6 col-sm-6 col-xs-12 mb-5">
                 <div class="blog-post">
                     <div class="post-img">
-                        <img src="https://picsum.photos/600/300" alt="" class="img-responsive">
+                        <img src="https://picsum.photos/600/350?random" alt="" class="img-responsive">
                     </div>
                     <div class="post-info">
                         <div class="post-date">
@@ -48,10 +48,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="blog-post">
                     <div class="post-img">
-                        <img src="https://picsum.photos/600/300" alt="" class="img-responsive">
+                        <img src="https://picsum.photos/600/310?random" alt="" class="img-responsive">
                     </div>
                     <div class="post-info">
                         <div class="post-date">
@@ -64,10 +64,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="blog-post">
                     <div class="post-img">
-                        <img src="https://picsum.photos/600/300" alt="" class="img-responsive">
+                        <img src="https://picsum.photos/600/340?random" alt="" class="img-responsive">
                     </div>
                     <div class="post-info">
                         <div class="post-date">
@@ -80,10 +80,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="blog-post">
                     <div class="post-img">
-                        <img src="https://picsum.photos/600/300" alt="" class="img-responsive">
+                        <img src="https://picsum.photos/600/370?random" alt="" class="img-responsive">
                     </div>
                     <div class="post-info">
                         <div class="post-date">
@@ -96,10 +96,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="blog-post">
                     <div class="post-img">
-                        <img src="https://picsum.photos/600/300" alt="" class="img-responsive">
+                        <img src="https://picsum.photos/600/320?random" alt="" class="img-responsive">
                     </div>
                     <div class="post-info">
                         <div class="post-date">
