@@ -46,7 +46,6 @@
     <link rel="stylesheet" href="js/parallax/main.css">
     <link rel='stylesheet' type='text/css' href='js/offcanvas/offcanvas.css'/>
     <link rel='stylesheet' type='text/css' href='js/smart-forms/smart-forms.css'/>
-
     <!-- Template's stylesheets END -->
 
     <!--[if lt IE 9]>
