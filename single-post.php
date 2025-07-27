@@ -108,7 +108,7 @@
             </div>
 
             <!-- Sidebar -->
-            <div class="col-md-4">
+            <div class="col-md-4 sticky-position">
                 <div class="g-sidebar-right">
                     <h3 class="g-sidebar-title">Recent Posts</h3>
                     <div class="g-recent-posts">

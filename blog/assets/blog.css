@@ -12,6 +12,10 @@
     padding: 1rem;
 }
 
+.post-img img {
+    width: 100%;
+}
+
 .g-blog {
     background-image: url(../../images/blog.jpg);
     background-position: right center;
@@ -269,7 +273,7 @@
 /*===============================
         Single Blog Post Styles
   ===============================*/
-.g-single-post-area{
+.g-single-post-area {
     margin-top: 150px;
 }
 
@@ -280,6 +284,12 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.sticky-position {
+    position: sticky;
+    top: 120px;
+}
+
+
 .g-sidebar-title {
     font-size: 2rem;
     font-weight: 600;
@@ -287,23 +297,26 @@
     border-bottom: 1px solid #dee2e6;
 }
 
-.g-post-meta{
+.g-post-meta {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
-.g-post-content > img{
-   width: 100%;
+
+.g-post-content > img {
+    width: 100%;
     padding: 2rem 0.5rem;
 }
-.g-post-content ul{
+
+.g-post-content ul {
     list-style: disc;
 }
 
-.g-post-title-image{
+.g-post-title-image {
     padding: 3rem 0.5rem;
 }
-.g-post-title-image img{
+
+.g-post-title-image img {
     width: 100%;
 }
 
