@@ -292,8 +292,19 @@
     align-items: center;
     gap: 1.5rem;
 }
+.g-post-content > img{
+   width: 100%;
+    padding: 2rem 0.5rem;
+}
+.g-post-content ul{
+    list-style: disc;
+}
+
 .g-post-title-image{
     padding: 3rem 0.5rem;
+}
+.g-post-title-image img{
+    width: 100%;
 }
 
 .g-recent-posts {

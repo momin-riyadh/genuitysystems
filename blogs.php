@@ -17,13 +17,13 @@
             <div class="col-md-6 col-sm-6 col-xs-12 ">
                 <div class="blog-post">
                     <div class="post-img">
-                        <img src="https://picsum.photos/600/300?random" alt="" class="img-responsive">
+                        <img src="images/blog/ai.jpg" alt="" class="img-responsive">
                     </div>
                     <div class="post-info">
                         <div class="post-date">
                             <span>January 15, 2024</span>
                         </div>
-                        <h3><a href="single-post.php">Sample Blog Post Title 1</a></h3>
+                        <h3><a href="single-post.php">What Is AI Voicebot and How Does It Work?</a></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nunc lorem, nec
                             faucibus mi facilisis eget.</p>
                         <a href="single-post.php" class="g-blog-btn">Read More</a>
