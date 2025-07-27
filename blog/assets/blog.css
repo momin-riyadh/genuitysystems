@@ -13,7 +13,7 @@
 }
 
 .g-blog {
-    background-image: url(https://picsum.photos/1920/500?random=1);
+    background-image: url(../../images/blog.jpg);
     background-position: right center;
     width: 100%;
     background-size: cover;
@@ -25,7 +25,7 @@
 
 @media all and (max-width: 768px) {
     .g-blog {
-        background-image: url(https://picsum.photos/1920/500?random=1);
+        background-image: url(../../images/blog.jpg);
         background-position: -50% center;
         width: 100%;
         background-size: cover;
@@ -264,3 +264,82 @@
         transform: translateX(100%);
     }
 }
+
+
+/*===============================
+        Single Blog Post Styles
+  ===============================*/
+.g-sidebar-right {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.g-sidebar-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.g-recent-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.g-recent-post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.g-recent-post-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.g-recent-post-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.g-recent-post-info h4 {
+    font-size: 1.4rem;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.g-post-date {
+    font-size: 1.3rem;
+    color: #6c757d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
