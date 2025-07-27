@@ -23,10 +23,10 @@
                         <div class="post-date">
                             <span>January 15, 2024</span>
                         </div>
-                        <h3><a href="blog-post.php">Sample Blog Post Title 1</a></h3>
+                        <h3><a href="single-post.php">Sample Blog Post Title 1</a></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nunc lorem, nec
                             faucibus mi facilisis eget.</p>
-                        <a href="blog-post.php" class="g-blog-btn">Read More</a>
+                        <a href="single-post.php" class="g-blog-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -40,10 +40,10 @@
                         <div class="post-date">
                             <span>February 8, 2024</span>
                         </div>
-                        <h3><a href="blog-post.php">Sample Blog Post Title 2</a></h3>
+                        <h3><a href="single-post.php">Sample Blog Post Title 2</a></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nunc lorem, nec
                             faucibus mi facilisis eget.</p>
-                        <a href="blog-post.php" class="g-blog-btn">Read More</a>
+                        <a href="single-post.php" class="g-blog-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -57,10 +57,10 @@
                         <div class="post-date">
                             <span>March 22, 2024</span>
                         </div>
-                        <h3><a href="blog-post.php">Sample Blog Post Title 3</a></h3>
+                        <h3><a href="single-post.php">Sample Blog Post Title 3</a></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nunc lorem, nec
                             faucibus mi facilisis eget.</p>
-                        <a href="blog-post.php" class="g-blog-btn">Read More</a>
+                        <a href="single-post.php" class="g-blog-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -73,10 +73,10 @@
                         <div class="post-date">
                             <span>March 22, 2024</span>
                         </div>
-                        <h3><a href="blog-post.php">Sample Blog Post Title 3</a></h3>
+                        <h3><a href="single-post.php">Sample Blog Post Title 3</a></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nunc lorem, nec
                             faucibus mi facilisis eget.</p>
-                        <a href="blog-post.php" class="g-blog-btn">Read More</a>
+                        <a href="single-post.php" class="g-blog-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -89,10 +89,10 @@
                         <div class="post-date">
                             <span>March 22, 2024</span>
                         </div>
-                        <h3><a href="blog-post.php">Sample Blog Post Title 3</a></h3>
+                        <h3><a href="single-post.php">Sample Blog Post Title 3</a></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nunc lorem, nec
                             faucibus mi facilisis eget.</p>
-                        <a href="blog-post.php" class="g-blog-btn">Read More</a>
+                        <a href="single-post.php" class="g-blog-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -105,10 +105,10 @@
                         <div class="post-date">
                             <span>March 22, 2024</span>
                         </div>
-                        <h3><a href="blog-post.php">Sample Blog Post Title 3</a></h3>
+                        <h3><a href="single-post.php">Sample Blog Post Title 3</a></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nunc lorem, nec
                             faucibus mi facilisis eget.</p>
-                        <a href="blog-post.php" class="g-blog-btn">Read More</a>
+                        <a href="single-post.php" class="g-blog-btn">Read More</a>
                     </div>
                 </div>
             </div>

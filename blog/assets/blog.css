@@ -269,6 +269,10 @@
 /*===============================
         Single Blog Post Styles
   ===============================*/
+.g-single-post-area{
+    margin-top: 150px;
+}
+
 .g-sidebar-right {
     padding: 1rem;
     background: #f8f9fa;
@@ -281,6 +285,15 @@
     font-weight: 600;
     margin-bottom: 1rem;
     border-bottom: 1px solid #dee2e6;
+}
+
+.g-post-meta{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.g-post-title-image{
+    padding: 3rem 0.5rem;
 }
 
 .g-recent-posts {

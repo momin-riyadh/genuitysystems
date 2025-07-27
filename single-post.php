@@ -5,14 +5,14 @@
             <div class="col-md-8">
                 <article class="blog-post-single">
                     <h1 class="post-title">The Future of Artificial Intelligence in Business</h1>
-                    <div class="post-meta">
-                        <span class="post-date">July 27, 2025</span>
-                        <span class="post-author">by John Doe</span>
+                    <div class="g-post-meta">
+                        <span class="post-date"><i class="fa fa-calendar"></i> July 27, 2025</span>
+                        <span class="post-author"><i class="fa fa-user"></i> by John Doe</span>
                     </div>
-                    <div class="post-image mt-4">
+                    <div class="g-post-title-image">
                         <img src="https://picsum.photos/800/400?random" alt="Blog Post Image" class="img-responsive">
                     </div>
-                    <div class="post-content mt-4">
+                    <div class="post-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
