@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>All Posts - Genuity Systems Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        .post-title {
+            font-weight: 600;
+            color: #0073aa;
+        }
+        .post-title:hover {
+            color: #005177;
+        }
+        .post-actions {
+            font-size: 0.875rem;
+        }
+        .post-actions a {
+            color: #0073aa;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .post-actions a:hover {
+            text-decoration: underline;
+        }
+        .status-published { color: #46b450; }
+        .status-draft { color: #999; }
+        .status-pending { color: #f56e28; }
+        .bulk-actions {
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .post-thumbnail {
+            width: 60px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="sb-nav-fixed">
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <!-- Navbar Brand-->
+    <a class="navbar-brand ps-3" href="index.html">
+        <img src="./assets/img/logo.svg" alt="">
+    </a>
+    <!-- Sidebar Toggle-->
+    <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+    <!-- Navbar Search-->
+    <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+            <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+        </div>
+    </form>
+    <!-- Navbar-->
+    <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#!">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+            <div class="sb-sidenav-menu">
+                <div class="nav">
+                    <div class="sb-sidenav-menu-heading">Content</div>
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePosts" aria-expanded="true" aria-controls="collapsePosts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                        Posts
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse show" id="collapsePosts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link active" href="all-post.html">All Posts</a>
+                            <a class="nav-link" href="new-blog.html">Add New</a>
+                        </nav>
+                    </div>
+                    <a class="nav-link" href="login.html">
+                        <div class="sb-nav-link-icon"><i class="fas fa-sign-in-alt"></i></div>
+                        Login
+                    </a>
+                </div>
+            </div>
+            <div class="sb-sidenav-footer">
+                <div class="small">Logged in as:</div>
+                Admin User
+            </div>
+        </nav>
+    </div>
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid px-4">
+                <div class="d-flex justify-content-between align-items-center mt-4 mb-4">
+                    <div>
+                        <h2>Posts</h2>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active">All Posts</li>
+                        </ol>
+                    </div>
+                    <a href="new-blog.html" class="btn btn-primary">
+                        <i class="fas fa-plus me-1"></i>Add New Post
+                    </a>
+                </div>
+
+                <!-- Filter and Bulk Actions -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <select class="form-select form-select-sm" id="bulkAction" style="width: auto;">
+                                        <option value="">Bulk Actions</option>
+                                        <option value="edit">Edit</option>
+                                        <option value="delete">Move to Trash</option>
+                                    </select>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="applyBulkAction()">Apply</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex gap-2 justify-content-end">
+                                    <select class="form-select form-select-sm" id="filterStatus" style="width: auto;">
+                                        <option value="">All statuses</option>
+                                        <option value="published">Published</option>
+                                        <option value="draft">Draft</option>
+                                        <option value="pending">Pending</option>
+                                    </select>
+                                    <select class="form-select form-select-sm" id="filterCategory" style="width: auto;">
+                                        <option value="">All categories</option>
+                                        <option value="technology">Technology</option>
+                                        <option value="business">Business</option>
+                                        <option value="marketing">Marketing</option>
+                                    </select>
+                                    <button class="btn btn-outline-primary btn-sm" onclick="filterPosts()">Filter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Posts Table -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover" id="postsTable">
+                                <thead>
+                                <tr>
+                                    <th style="width: 30px;">
+                                        <input type="checkbox" id="selectAll" onclick="toggleAllPosts()">
+                                    </th>
+                                    <th style="width: 80px;"></th>
+                                    <th>Title</th>
+                                    <th style="width: 120px;">Author</th>
+                                    <th style="width: 120px;">Categories</th>
+                                    <th style="width: 100px;">Tags</th>
+                                    <th style="width: 100px;">Comments</th>
+                                    <th style="width: 120px;">Date</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><input type="checkbox" name="postCheck" value="1"></td>
+                                    <td>
+                                        <img src="https://placehold.co/100x100" alt="Featured" class="post-thumbnail">
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#!" class="post-title">Getting Started with Modern Web Development</a>
+                                            <div class="post-actions">
+                                                <a href="#!">Edit</a>
+                                                <a href="#!" class="text-danger">Quick Edit</a>
+                                                <a href="#!" class="text-danger">Trash</a>
+                                                <a href="#!">View</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Admin User</td>
+                                    <td>
+                                        <span class="badge bg-secondary me-1">Technology</span>
+                                        <span class="badge bg-secondary">Development</span>
+                                    </td>
+                                    <td>javascript, react, web</td>
+                                    <td>
+                                        <i class="fas fa-comment"></i> 5
+                                    </td>
+                                    <td>
+                                        <span class="status-published">Published</span><br>
+                                        <small class="text-muted">2023-12-01</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="postCheck" value="2"></td>
+                                    <td>
+                                        <img src="https://placehold.co/100x100" alt="Featured" class="post-thumbnail">
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#!" class="post-title">Building Scalable Business Solutions</a>
+                                            <div class="post-actions">
+                                                <a href="#!">Edit</a>
+                                                <a href="#!" class="text-danger">Quick Edit</a>
+                                                <a href="#!" class="text-danger">Trash</a>
+                                                <a href="#!">View</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Editor</td>
+                                    <td>
+                                        <span class="badge bg-secondary">Business</span>
+                                    </td>
+                                    <td>business, scaling, solutions</td>
+                                    <td>
+                                        <i class="fas fa-comment"></i> 12
+                                    </td>
+                                    <td>
+                                        <span class="status-published">Published</span><br>
+                                        <small class="text-muted">2023-11-28</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="postCheck" value="3"></td>
+                                    <td>
+                                        <img src="https://placehold.co/100x100" alt="Featured" class="post-thumbnail">
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#!" class="post-title">Digital Marketing Trends 2024</a>
+                                            <div class="post-actions">
+                                                <a href="#!">Edit</a>
+                                                <a href="#!" class="text-danger">Quick Edit</a>
+                                                <a href="#!" class="text-danger">Trash</a>
+                                                <a href="#!">Preview</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Contributor</td>
+                                    <td>
+                                        <span class="badge bg-secondary">Marketing</span>
+                                    </td>
+                                    <td>marketing, digital, trends</td>
+                                    <td>
+                                        <i class="fas fa-comment"></i> 3
+                                    </td>
+                                    <td>
+                                        <span class="status-draft">Draft</span><br>
+                                        <small class="text-muted">2023-11-25</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="postCheck" value="4"></td>
+                                    <td>
+                                        <img src="https://placehold.co/100x100" alt="Featured" class="post-thumbnail">
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#!" class="post-title">Understanding User Experience Design</a>
+                                            <div class="post-actions">
+                                                <a href="#!">Edit</a>
+                                                <a href="#!" class="text-danger">Quick Edit</a>
+                                                <a href="#!" class="text-danger">Trash</a>
+                                                <a href="#!">Preview</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Admin User</td>
+                                    <td>
+                                        <span class="badge bg-secondary">Design</span>
+                                    </td>
+                                    <td>ux, design, user-experience</td>
+                                    <td>
+                                        <i class="fas fa-comment"></i> 0
+                                    </td>
+                                    <td>
+                                        <span class="status-pending">Pending Review</span><br>
+                                        <small class="text-muted">2023-11-20</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="postCheck" value="5"></td>
+                                    <td>
+                                        <img src="https://placehold.co/100x100" alt="Featured" class="post-thumbnail">
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#!" class="post-title">The Future of Artificial Intelligence</a>
+                                            <div class="post-actions">
+                                                <a href="#!">Edit</a>
+                                                <a href="#!" class="text-danger">Quick Edit</a>
+                                                <a href="#!" class="text-danger">Trash</a>
+                                                <a href="#!">View</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Editor</td>
+                                    <td>
+                                        <span class="badge bg-secondary me-1">Technology</span>
+                                        <span class="badge bg-secondary">Business</span>
+                                    </td>
+                                    <td>ai, artificial-intelligence, future</td>
+                                    <td>
+                                        <i class="fas fa-comment"></i> 8
+                                    </td>
+                                    <td>
+                                        <span class="status-published">Published</span><br>
+                                        <small class="text-muted">2023-11-15</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="postCheck" value="6"></td>
+                                    <td>
+                                        <img src="https://placehold.co/100x100" alt="Featured" class="post-thumbnail">
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#!" class="post-title">Effective Project Management Strategies</a>
+                                            <div class="post-actions">
+                                                <a href="#!">Edit</a>
+                                                <a href="#!" class="text-danger">Quick Edit</a>
+                                                <a href="#!" class="text-danger">Trash</a>
+                                                <a href="#!">View</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Contributor</td>
+                                    <td>
+                                        <span class="badge bg-secondary">Business</span>
+                                    </td>
+                                    <td>project-management, strategies</td>
+                                    <td>
+                                        <i class="fas fa-comment"></i> 15
+                                    </td>
+                                    <td>
+                                        <span class="status-published">Published</span><br>
+                                        <small class="text-muted">2023-11-10</small>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="text-muted">
+                                Showing 1 to 6 of 6 entries
+                            </div>
+                            <nav>
+                                <ul class="pagination pagination-sm mb-0">
+                                    <li class="page-item disabled">
+                                        <span class="page-link">Previous</span>
+                                    </li>
+                                    <li class="page-item active">
+                                        <span class="page-link">1</span>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <span class="page-link">Next</span>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Genuity Systems Limited <script>document.write(new Date().getFullYear())</script></div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                        &middot;
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+    // Toggle all checkboxes
+    function toggleAllPosts() {
+        const selectAll = document.getElementById('selectAll');
+        const checkboxes = document.querySelectorAll('input[name="postCheck"]');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = selectAll.checked;
+        });
+    }
+
+    // Apply bulk actions
+    function applyBulkAction() {
+        const action = document.getElementById('bulkAction').value;
+        const checkedBoxes = document.querySelectorAll('input[name="postCheck"]:checked');
+
+        if (!action) {
+            alert('Please select an action');
+            return;
+        }
+
+        if (checkedBoxes.length === 0) {
+            alert('Please select at least one post');
+            return;
+        }
+
+        const postIds = Array.from(checkedBoxes).map(cb => cb.value);
+
+        if (action === 'delete') {
+            if (confirm(`Are you sure you want to move ${postIds.length} post(s) to trash?`)) {
+                alert(`${postIds.length} post(s) moved to trash`);
+                // Here you would implement the actual delete functionality
+            }
+        } else if (action === 'edit') {
+            alert(`Bulk edit for ${postIds.length} post(s)`);
+            // Here you would implement the bulk edit functionality
+        }
+    }
+
+    // Filter posts
+    function filterPosts() {
+        const status = document.getElementById('filterStatus').value;
+        const category = document.getElementById('filterCategory').value;
+
+        // In a real application, this would make an AJAX call to filter posts
+        let filterText = 'Filtering posts';
+        if (status) filterText += ` by status: ${status}`;
+        if (category) filterText += ` by category: ${category}`;
+
+        alert(filterText);
+    }
+
+    // Row hover effects and interactions
+    document.addEventListener('DOMContentLoaded', function() {
+        // Update select all checkbox when individual checkboxes change
+        const checkboxes = document.querySelectorAll('input[name="postCheck"]');
+        const selectAll = document.getElementById('selectAll');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const checkedBoxes = document.querySelectorAll('input[name="postCheck"]:checked');
+                selectAll.checked = checkedBoxes.length === checkboxes.length;
+                selectAll.indeterminate = checkedBoxes.length > 0 && checkedBoxes.length < checkboxes.length;
+            });
+        });
+    });
+</script>
+</body>
+</html>

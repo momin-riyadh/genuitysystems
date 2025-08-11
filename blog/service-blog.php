@@ -163,21 +163,21 @@ tr:nth-child(even) {
                     <div class="g-recent-post-item">
                         <img src="images/blog/ai-telecom.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="ai-telecom-blog.php">AI Voicebot Use Cases in Telecom</a></h4>
+                            <h4><a href="blog/ai-telecom-blog.php">AI Voicebot Use Cases in Telecom</a></h4>
                             <span class="g-post-date">July 25, 2025</span>
                         </div>
                     </div>
                     <div class="g-recent-post-item">
                         <img src="images/blog/insurance.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="insurance-blog.php">AI Voicebots in Insurance: 5 Benefits You Should Know</a></h4>
+                            <h4><a href="blog/insurance-blog.php">AI Voicebots in Insurance: 5 Benefits You Should Know</a></h4>
                             <span class="g-post-date">July 23, 2025</span>
                         </div>
                     </div>
                     <div class="g-recent-post-item">
                         <img src="images/blog/survey.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="survey-calls-blog.php">AI-Powered Survey Calls: Key Benefits & Use Cases</a></h4>
+                            <h4><a href="blog/survey-calls-blog.php">AI-Powered Survey Calls: Key Benefits & Use Cases</a></h4>
                             <span class="g-post-date">July 20, 2025</span>
                         </div>
                     </div>

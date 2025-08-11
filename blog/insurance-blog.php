@@ -181,21 +181,21 @@ tr:nth-child(even) {
                     <div class="g-recent-post-item">
                         <img src="images/blog/survey.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="survey-calls-blog.php">AI-Powered Survey Calls: Key Benefits & Use Cases</a></h4>
+                            <h4><a href="blog/survey-calls-blog.php">AI-Powered Survey Calls: Key Benefits & Use Cases</a></h4>
                             <span class="g-post-date">Auguest 5, 2025</span>
                         </div>
                     </div>
                     <div class="g-recent-post-item">
                         <img src="images/blog/card.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="voice-notification-blog.php">AI in Transactional Voice Notifications: Key Benefits</a></h4>
+                            <h4><a href="blog/voice-notification-blog.php">AI in Transactional Voice Notifications: Key Benefits</a></h4>
                             <span class="g-post-date">Auguest 4, 2025</span>
                         </div>
                     </div>
                     <div class="g-recent-post-item">
                         <img src="images/blog/ecom.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="ecom-blog.php">The Role of AI in Voice Blast Marketing Campaigns</a></h4>
+                            <h4><a href="blog/ecom-blog.php">The Role of AI in Voice Blast Marketing Campaigns</a></h4>
                             <span class="g-post-date">Auguest 4, 2025</span>
                         </div>
                     </div>

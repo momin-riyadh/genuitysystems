@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Backend guideline for Blogs feature: authentication, CRUD, organization, and integration notes." />
+    <meta name="author" content="" />
+    <title>Guideline: Blogs Backend - GS Admin</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+    <!-- Styles (vendor + local overrides) -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <style>
+        /* Page-specific helpers for readability */
+        pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+        pre { background: #0f172a; color: #e2e8f0; padding: 1rem; border-radius: .5rem; overflow: auto; }
+        code.inline { background: #f1f5f9; padding: .1rem .35rem; border-radius: .25rem; }
+        .guideline h1, .guideline h2, .guideline h3 { scroll-margin-top: 6rem; }
+        .toc a { text-decoration: none; }
+        .badge-endpoint { font-size: .75rem; }
+        .note { background: #f8fafc; border-left: 4px solid #3b82f6; padding: .75rem 1rem; border-radius: .35rem; }
+        .warn { background: #fff7ed; border-left: 4px solid #f59e0b; padding: .75rem 1rem; border-radius: .35rem; }
+    </style>
+    <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+    <!-- Top Navbar -->
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">
+            <img src="assets/img/logo.svg" alt="">
+        </a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        <!-- Right-aligned auth link -->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item">
+                <a class="nav-link" href="login.html"><i class="fas fa-user-lock me-1"></i> Login</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <!-- Sidebar -->
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Content</div>
+                        <a class="nav-link" href="all-post.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            All Posts
+                        </a>
+                        <a class="nav-link" href="new-blog.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-pen-nib"></i></div>
+                            New Blog
+                        </a>
+                        <a class="nav-link" href="login.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-sign-in-alt"></i></div>
+                            Login
+                        </a>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged out</div>
+                    Documentation
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4 guideline">
+                    <div class="d-flex justify-content-between align-items-center mt-4 mb-3">
+                        <div>
+                            <h1 class="mb-0">Guideline: Blogs Feature Backend</h1>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Blogs Backend Guideline</li>
+                            </ol>
+                        </div>
+                        <span class="badge bg-primary">v1.0</span>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h2 id="overview">1) Overview</h2>
+                                    <p>
+                                        This document describes a pragmatic backend design for a Blogs feature powering GS Admin.
+                                        It covers user authentication, creating/updating/deleting posts, organizing content with categories and tags, and integrating the API with existing admin pages (<span class="badge bg-light text-dark">new-blog.html</span> and <span class="badge bg-light text-dark">all-post.html</span>).
+                                        You can implement it in any web backend stack (Node/Express, Laravel, Django, Rails, etc.). Examples below use JSON over HTTP with JWT-based authentication.
+                                    </p>
+
+                                    <div class="note mb-3">
+                                        Minimal viable scope: secure login, CRUD for posts, publish/draft state, slugs, pagination, and basic organization (categories/tags).
+                                    </div>
+
+                                    <h2 id="auth">2) Authentication & Authorization</h2>
+                                    <ul>
+                                        <li>Use email/password login returning a short-lived <code class="inline">access_token</code> (JWT) and long-lived <code class="inline">refresh_token</code>.</li>
+                                        <li>Protect all content endpoints with Bearer access tokens.</li>
+                                        <li>Roles: <code class="inline">admin</code>, <code class="inline">editor</code>, <code class="inline">author</code> (author can manage own posts; editor/admin can manage all).</li>
+                                        <li>Password hashing with bcrypt/Argon2. Enforce strong passwords and rate limit login attempts.</li>
+                                    </ul>
+                                    <pre>{
+  "POST /api/auth/login": {
+    "body": {"email": "user@example.com", "password": "string"},
+    "200": {"access_token": "jwt", "refresh_token": "jwt", "user": {"id": 1, "name": "...", "role": "editor"}},
+    "401": {"error": {"code": "INVALID_CREDENTIALS", "message": "..."}}
+  },
+  "POST /api/auth/refresh": {
+    "body": {"refresh_token": "jwt"},
+    "200": {"access_token": "jwt"},
+    "401": {"error": {"code": "TOKEN_INVALID", "message": "..."}}
+  },
+  "POST /api/auth/logout": {
+    "auth": "Bearer access",
+    "body": {"refresh_token": "jwt"},
+    "204": {}
+  }
+}</pre>
+
+                                    <h2 id="models">3) Data Models</h2>
+                                    <h5 class="mt-3">Relational (SQL) suggestion</h5>
+                                    <pre>users(id PK, name, email UNIQUE, password_hash, role ENUM('admin','editor','author'), created_at, updated_at)
+posts(id PK, author_id FK users.id, title, slug UNIQUE, excerpt, content_html, content_text, cover_url, status ENUM('draft','published'),
+      published_at NULLABLE, meta_title, meta_description, created_at, updated_at)
+categories(id PK, name UNIQUE, slug UNIQUE, created_at, updated_at)
+tags(id PK, name UNIQUE, slug UNIQUE, created_at, updated_at)
+post_categories(post_id FK posts.id, category_id FK categories.id, PRIMARY KEY(post_id, category_id))
+post_tags(post_id FK posts.id, tag_id FK tags.id, PRIMARY KEY(post_id, tag_id))</pre>
+                                    <p class="mb-0"><strong>Indexes</strong>: posts.slug, posts.status+published_at, posts.author_id, post_tags.tag_id, post_categories.category_id.</p>
+
+                                    <h2 id="endpoints">4) API Endpoints</h2>
+                                    <h5>Posts</h5>
+                                    <pre>{
+  "GET /api/posts": {
+    "auth": "Bearer",
+    "query": {
+      "page": 1, "limit": 20,
+      "status": "draft|published",
+      "q": "search string",
+      "author_id": 1,
+      "category": "slug",
+      "tag": "slug",
+      "sort": "-published_at|title|-created_at"
+    },
+    "200": {"items": [/* PostSummary */], "page": 1, "limit": 20, "total": 57}
+  },
+  "POST /api/posts": {
+    "auth": "Bearer",
+    "roles": ["author","editor","admin"],
+    "body": {
+      "title": "string",
+      "content_html": "&lt;p&gt;...&lt;/p&gt;",
+      "status": "draft|published",
+      "excerpt": "optional",
+      "categories": ["slug", ...],
+      "tags": ["slug", ...],
+      "meta_title": "optional",
+      "meta_description": "optional",
+      "cover_url": "optional"
+    },
+    "201": {"id": 123, "slug": "generated-from-title"}
+  },
+  "GET /api/posts/{id|slug}": {"auth": "Bearer", "200": {/* Post */}, "404": {"error": {"code": "NOT_FOUND"}}},
+  "PATCH /api/posts/{id}": {"auth": "Bearer", "roles": ["author:own","editor","admin"], "200": {/* Post */}},
+  "DELETE /api/posts/{id}": {"auth": "Bearer", "roles": ["author:own","editor","admin"], "204": {}}
+}</pre>
+
+                                    <h5>Organization</h5>
+                                    <pre>{
+  "GET /api/categories": {"auth": "Bearer", "200": [{"id":1,"name":"Tech","slug":"tech"}]},
+  "POST /api/categories": {"auth": "Bearer", "roles":["editor","admin"], "201": {"id": 10}},
+  "GET /api/tags": {"auth": "Bearer", "200": [{"id":1,"name":"NodeJS","slug":"nodejs"}]},
+  "POST /api/tags": {"auth": "Bearer", "roles":["editor","admin"], "201": {"id": 22}}
+}</pre>
+
+                                    <h5>Media Upload</h5>
+                                    <pre>{
+  "POST /api/media": {
+    "auth": "Bearer",
+    "consumes": "multipart/form-data",
+    "body": {"file": "binary"},
+    "201": {"url": "https://cdn.example.com/uploads/2025/08/cover.jpg"}
+  }
+}</pre>
+
+                                    <h2 id="payloads">5) Example Payloads</h2>
+                                    <pre>// Create draft post
+POST /api/posts
+Authorization: Bearer &lt;access_token&gt;
+Content-Type: application/json
+{
+  "title": "Hello GS Admin",
+  "content_html": "&lt;p&gt;First blog post&lt;/p&gt;",
+  "status": "draft",
+  "categories": ["news"],
+  "tags": ["release","admin"],
+  "meta_title": "Hello GS Admin",
+  "meta_description": "Introducing our admin dashboard"
+}
+
+// Publish existing draft
+PATCH /api/posts/123
+{
+  "status": "published",
+  "published_at": "2025-08-10T11:25:00Z"
+}</pre>
+
+                                    <h2 id="integration">6) Integration with GS Admin UI</h2>
+                                    <p>Connect the existing admin pages to the backend using fetch/XHR. Keep the load order: Bootstrap bundle → js/scripts.js. Example snippets:</p>
+                                    <h6>new-blog.html (Publish, Save Draft)</h6>
+                                    <pre>&lt;script&gt;
+async function api(path, opts={}) {
+  const token = localStorage.getItem('access_token');
+  const headers = Object.assign({ 'Content-Type': 'application/json' }, opts.headers||{});
+  if (token) headers['Authorization'] = `Bearer ${token}`;
+  const res = await fetch(`/api${path}`, Object.assign({}, opts, { headers }));
+  if (!res.ok) throw await res.json();
+  return res.status === 204 ? null : res.json();
+}
+
+async function saveDraft() {
+  const title = document.getElementById('postTitle').value;
+  const content = document.getElementById('postContent').value; // set by editor
+  const body = { title, content_html: content, status: 'draft' };
+  const created = await api('/posts', { method: 'POST', body: JSON.stringify(body) });
+  // Handle success (toast, redirect)
+}
+
+async function publishPost(postId) {
+  await api(`/posts/${postId}`, { method: 'PATCH', body: JSON.stringify({ status: 'published' }) });
+}
+&lt;/script&gt;</pre>
+
+                                    <h6>all-post.html (List, Delete)</h6>
+                                    <pre>&lt;script&gt;
+async function loadPosts(page=1) {
+  const data = await api(`/posts?page=${page}&limit=20&sort=-created_at`);
+  // Feed rows into Simple-DataTables
+}
+async function deletePost(id) {
+  if (!confirm('Delete this post?')) return;
+  await api(`/posts/${id}`, { method: 'DELETE' });
+  await loadPosts();
+}
+&lt;/script&gt;</pre>
+
+                                    <div class="warn mb-3">
+                                        For Quill/other rich text editors, store sanitized HTML on the server and also maintain a plain-text excerpt for previews (server can derive but allow override).
+                                    </div>
+
+                                    <h2 id="validation">7) Validation & Error Format</h2>
+                                    <pre>// Error response format (suggested)
+{
+  "error": {
+    "code": "VALIDATION_ERROR",
+    "message": "One or more fields are invalid",
+    "details": [
+      {"field": "title", "message": "Title is required"}
+    ]
+  }
+}
+
+// Common checks
+- title: required, 1..200 chars
+- content_html: required for publish
+- status: draft|published
+- categories,tags: existing slugs only; create-on-write optional (editor+)
+- slug: auto-generate, unique, editable for admin/editor (validate)
+</pre>
+
+                                    <h2 id="security">8) Security</h2>
+                                    <ul>
+                                        <li>JWT with short expiration (e.g., 15m); refresh rotation with revocation list.</li>
+                                        <li>Role-based checks at route level; authors restricted to own posts.</li>
+                                        <li>Sanitize and validate HTML to prevent XSS; use an allowlist sanitizer server-side.</li>
+                                        <li>Rate limit login and write endpoints; enable CORS only for trusted origins.</li>
+                                        <li>Store media in object storage (S3/GCS) with signed uploads or via media endpoint.</li>
+                                    </ul>
+
+                                    <h2 id="pagination">9) Pagination, Sorting, Search</h2>
+                                    <ul>
+                                        <li>Use <code class="inline">page</code> and <code class="inline">limit</code> with bounds (1..100).</li>
+                                        <li>Sort syntax: prefix with <code class="inline">-</code> for descending. Allow fields: created_at, published_at, title.</li>
+                                        <li>Search across title, excerpt, content_text using full-text indexes when possible.</li>
+                                    </ul>
+
+                                    <h2 id="deployment">10) Deployment & Configuration</h2>
+                                    <pre># Environment variables (sample)
+APP_URL=https://admin.example.com
+API_URL=https://api.example.com
+JWT_SECRET=change-me
+ACCESS_TTL=15m
+REFRESH_TTL=30d
+DB_URL=postgres://user:pass@host:5432/app
+STORAGE_BUCKET=...
+CORS_ORIGINS=https://admin.example.com,https://www.example.com
+RATE_LIMIT=100/minute
+</pre>
+
+                                    <h2 id="testing">11) Testing</h2>
+                                    <pre># Login
+curl -X POST https://api.example.com/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"editor@example.com","password":"secret"}'
+
+# Create draft
+curl -X POST https://api.example.com/api/posts \
+  -H "Authorization: Bearer $ACCESS" -H "Content-Type: application/json" \
+  -d '{"title":"Draft","content_html":"&lt;p&gt;Hi&lt;/p&gt;","status":"draft"}'
+
+# Publish
+curl -X PATCH https://api.example.com/api/posts/123 \
+  -H "Authorization: Bearer $ACCESS" -H "Content-Type: application/json" \
+  -d '{"status":"published"}'
+</pre>
+
+                                    <h2 id="roadmap">12) Future Enhancements</h2>
+                                    <ul>
+                                        <li>Revisions/history per post (audit log).</li>
+                                        <li>Scheduling posts with a background worker.</li>
+                                        <li>Content localization (i18n) with post_translations table.</li>
+                                        <li>Webhooks to rebuild static sites or invalidate CDN cache on publish.</li>
+                                        <li>Role customization and granular permissions.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card mb-4">
+                                <div class="card-header"><i class="fas fa-list-ul me-1"></i>Table of Contents</div>
+                                <div class="card-body toc">
+                                    <ol class="mb-0">
+                                        <li><a href="#overview">Overview</a></li>
+                                        <li><a href="#auth">Authentication & Authorization</a></li>
+                                        <li><a href="#models">Data Models</a></li>
+                                        <li><a href="#endpoints">API Endpoints</a></li>
+                                        <li><a href="#payloads">Example Payloads</a></li>
+                                        <li><a href="#integration">Integration with GS Admin UI</a></li>
+                                        <li><a href="#validation">Validation & Error Format</a></li>
+                                        <li><a href="#security">Security</a></li>
+                                        <li><a href="#pagination">Pagination, Sorting, Search</a></li>
+                                        <li><a href="#deployment">Deployment & Configuration</a></li>
+                                        <li><a href="#testing">Testing</a></li>
+                                        <li><a href="#roadmap">Future Enhancements</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header"><i class="fas fa-lightbulb me-1"></i>Quick Tips</div>
+                                <div class="card-body">
+                                    <ul class="mb-0">
+                                        <li>Keep API stateless; use JWT for auth.</li>
+                                        <li>Guard publish/update/delete with roles.</li>
+                                        <li>Normalize categories/tags; use slugs.</li>
+                                        <li>Return consistent error shapes.</li>
+                                        <li>Enable pagination on all list endpoints.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">&copy; GS Admin 2025</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Scripts: Bootstrap bundle then app scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

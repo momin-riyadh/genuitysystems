@@ -251,21 +251,21 @@ tr:nth-child(even) {
                     <div class="g-recent-post-item">
                         <img src="images/blog/ai.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="single-post-blog.php">What is AI Voicebot and How Does It Work?</a></h4>
+                            <h4><a href="blog/single-post-blog.php">What is AI Voicebot and How Does It Work?</a></h4>
                             <span class="g-post-date">Auguest 3, 2025</span>
                         </div>
                     </div>
                     <div class="g-recent-post-item">
                         <img src="images/blog/avf.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="bot-features-blog.php">AI Voicebot Features to Know Before Investing</a></h4>
+                            <h4><a href="blog/bot-features-blog.php">AI Voicebot Features to Know Before Investing</a></h4>
                             <span class="g-post-date">Auguest 3, 2025</span>
                         </div>
                     </div>
                     <div class="g-recent-post-item">
                         <img src="images/blog/benefit.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="benefit-blog.php">AI Voicebot Benefits: How AI Voicebots Improve Call Center Efficiency</a></h4>
+                            <h4><a href="blog/benefit-blog.php">AI Voicebot Benefits: How AI Voicebots Improve Call Center Efficiency</a></h4>
                             <span class="g-post-date">Auguest 3, 2025</span>
                         </div>
                     </div>

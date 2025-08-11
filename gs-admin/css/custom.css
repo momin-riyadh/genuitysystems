@@ -1,0 +1,18 @@
+.navbar-brand img {
+    width: 160px;
+}
+
+.g-login-bg {
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+}
+
+.g-login-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+}
+
+.dropdown-menu-end{
+    right: 10px;
+}

@@ -216,21 +216,21 @@ tr:nth-child(even) {
                     <div class="g-recent-post-item">
                         <img src="images/blog/banking.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="banking-blog.php">AI Voicebot Use Cases in Banking: Account Support, KYC, and More</a></h4>
+                            <h4><a href="blog/banking-blog.php">AI Voicebot Use Cases in Banking: Account Support, KYC, and More</a></h4>
                             <span class="g-post-date">Auguest 4, 2025</span>
                         </div>
                     </div>
                     <div class="g-recent-post-item">
                         <img src="images/blog/telecom.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="telecom-blog.php">7 Real-Life Use Cases of AI Chatbots in Customer Service</a></h4>
+                            <h4><a href="blog/telecom-blog.php">7 Real-Life Use Cases of AI Chatbots in Customer Service</a></h4>
                             <span class="g-post-date">Auguest 4, 2025</span>
                         </div>
                     </div>
                     <div class="g-recent-post-item">
                         <img src="images/blog/appoint.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="appoint-blog.php">AI in Appointment Reminder Calls</a></h4>
+                            <h4><a href="blog/appoint-blog.php">AI in Appointment Reminder Calls</a></h4>
                             <span class="g-post-date">Auguest 4, 2025</span>
                         </div>
                     </div>

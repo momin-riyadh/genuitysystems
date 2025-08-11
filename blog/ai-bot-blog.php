@@ -152,21 +152,21 @@
                     <div class="g-recent-post-item">
                         <img src="images/blog/rule.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="blog/rule-blog.php">AI Chatbots vs. Rule-Based Chatbots</a></h4>
+                            <h4><a href="blog/blog/rule-blog.php">AI Chatbots vs. Rule-Based Chatbots</a></h4>
                             <span class="g-post-date">July 30, 2025</span>
                         </div>
                     </div>
                     <div class="g-recent-post-item">
                         <img src="images/blog/service.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="blog/service-blog.php">7 Real-Life Use Cases of AI Chatbots in Customer Service</a></h4>
+                            <h4><a href="blog/blog/service-blog.php">7 Real-Life Use Cases of AI Chatbots in Customer Service</a></h4>
                             <span class="g-post-date">July 30, 2025</span>
                         </div>
                     </div>
                     <div class="g-recent-post-item">
                         <img src="images/blog/ai-telecom.jpg" alt="Recent Post" class="g-recent-post-img">
                         <div class="g-recent-post-info">
-                            <h4><a href="blog/ai-telecom-blog.php">AI Voicebot Use Cases in Telecom</a></h4>
+                            <h4><a href="blog/blog/ai-telecom-blog.php">AI Voicebot Use Cases in Telecom</a></h4>
                             <span class="g-post-date">July 30, 2025</span>
                         </div>
                     </div>
