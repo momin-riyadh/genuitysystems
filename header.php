@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<?php
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https://' : 'http://';
+$host = $_SERVER['HTTP_HOST'] ?? '';
+$docRootReal = realpath($_SERVER['DOCUMENT_ROOT'] ?? '');
+$docRoot = $docRootReal ? rtrim(str_replace('\\','/', $docRootReal), '/') : '';
+$dir = rtrim(str_replace('\\','/', realpath(__DIR__)), '/');
+$subDir = '';
+if ($docRoot && strpos($dir, $docRoot) === 0) { $subDir = substr($dir, strlen($docRoot)); }
+$baseUrl = $protocol . $host . $subDir . '/';
+?>
+<base href="<?php echo htmlspecialchars($baseUrl, ENT_QUOTES); ?>">
     <title>Genuity Systems Ltd. - Enhancing Customer Experience</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description"

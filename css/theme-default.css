@@ -4,7 +4,6 @@ Author: Codelayers
 Version: 1.0
 Design and Developed by: Codelayers
 
-
 */
 
 /*
@@ -59,7 +58,6 @@ Design and Developed by: Codelayers
 		+ footer logo
 		+ lists
 
-
 	10. Parallax Sections
 
 	11. Overlay Styles
@@ -73,15 +71,12 @@ Design and Developed by: Codelayers
 
 	13. Feature boxs
 
-
 ======================================
 [ END CSS TABLE CONTENT ]
 ======================================
 */
 
-
 /* =========== General ============= */
-
 
 body {
     font: 14px 'Open Sans', sans-serif;
@@ -231,7 +226,6 @@ h4.nomargin {
     border-radius: 3px;
 }
 
-
 h4.less-mar-1 {
     margin-bottom: 3px;
 }
@@ -313,6 +307,22 @@ h6.less-mar-4 {
 
 ul {
     list-style-type: none;
+}
+
+.post-img img {
+    margin-bottom: 15px;
+}
+
+.art {
+    margin-bottom: 80px;
+}
+
+.gap-top {
+    margin-top: 30px;
+}
+
+.gap-bottom {
+    margin-bottom: 30px;
 }
 
 /*=============== Text Colors ============= */
@@ -401,9 +411,6 @@ p.ban-text {
     -webkit-text-fill-color: transparent;
 }
 
-
-
-
 div#slide-2-layer-2 {
     color: #3396d6;
 }
@@ -423,7 +430,6 @@ div#slide-2-layer-2 {
 .sivr {
     border-radius: 15px;
 }
-
 
 .about {
     background-image: url(../images/back.jpg);
@@ -454,7 +460,6 @@ div#slide-2-layer-2 {
     }
 }
 
-
 .news-event {
     background-image: url(../images/event.jpg);
     background-position: center;
@@ -483,7 +488,6 @@ div#slide-2-layer-2 {
         line-height: 1.2em;
     }
 }
-
 
 .client {
     background-image: url(../images/client.jpg);
@@ -515,7 +519,6 @@ div#slide-2-layer-2 {
     }
 }
 
-
 .address {
     background-image: url(../images/contact.jpg);
     background-position: right center;
@@ -544,7 +547,6 @@ div#slide-2-layer-2 {
         line-height: 1.2em;
     }
 }
-
 
 .call-center {
     background-image: url(../images/call-center.jpg);
@@ -637,7 +639,6 @@ div#slide-2-layer-2 {
     }
 }
 
-
 .sivr {
     background: url(../images/sivr.jpg) no-repeat center top;
     float: left;
@@ -674,7 +675,6 @@ div#slide-2-layer-2 {
     }
 }
 
-
 .disha {
     background-image: url(../images/disha.jpg);
     background-position: right center;
@@ -703,7 +703,6 @@ div#slide-2-layer-2 {
         line-height: 1.2em;
     }
 }
-
 
 .dialer {
     background-image: url(../images/dialer.jpg);
@@ -735,7 +734,6 @@ div#slide-2-layer-2 {
     }
 }
 
-
 .customer-care {
     background-image: url(../images/customer-care.jpg);
     background-position: right center;
@@ -765,7 +763,6 @@ div#slide-2-layer-2 {
         line-height: 1.2em;
     }
 }
-
 
 .chat-bot {
     background-image: url(../images/chat-bot.jpg);
@@ -827,7 +824,6 @@ div#slide-2-layer-2 {
     }
 }
 
-
 .sms-blaster {
     background-image: url(../images/sms-blaster.jpg);
     background-position: 50%;
@@ -870,7 +866,6 @@ div#slide-2-layer-2 {
     height: 300px;
 }
 
-
 @media all and (max-width: 768px) {
     .email-module {
         background-image: url(../images/email-module.jpg);
@@ -888,7 +883,6 @@ div#slide-2-layer-2 {
         line-height: 1.2em;
     }
 }
-
 
 .ticket {
     background-image: url(../images/ticket.jpg);
@@ -920,7 +914,6 @@ div#slide-2-layer-2 {
     }
 }
 
-
 .knowledge {
     background-image: url(../images/knowledge.jpg);
     background-position: center center;
@@ -951,7 +944,6 @@ div#slide-2-layer-2 {
     }
 }
 
-
 .evaluation {
     background-image: url(../images/evaluation.jpg);
     background-position: center center;
@@ -981,7 +973,6 @@ div#slide-2-layer-2 {
         line-height: 1.2em;
     }
 }
-
 
 .voice-analysis {
     background-image: url(../images/voice-analysis.jpg);
@@ -1215,7 +1206,6 @@ div#slide-2-layer-2 {
     height: 300px;
 }
 
-
 @media all and (max-width: 768px) {
     .chat-support {
         background-image: url(../images/chat-support.jpg);
@@ -1336,7 +1326,6 @@ div#slide-2-layer-2 {
     }
 
 }
-
 
 @media all and (max-width: 768px) {
     .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
@@ -1786,13 +1775,11 @@ div#slide-2-layer-2 {
     font-family: 'Cinzel Decorative', cursive;
 }
 
-
 /* line height
  ------------------------------ */
 .line-height-1 {
     line-height: 18px;
 }
-
 
 /* letter spacing
  ------------------------------ */
@@ -1819,7 +1806,6 @@ div#slide-2-layer-2 {
 .lspace-5 {
     letter-spacing: 50px;
 }
-
 
 /* font weight styles
  ------------------------------ */
@@ -2592,7 +2578,6 @@ a.read-more.gyellow-2:hover {
     margin-left: 50px
 }
 
-
 /* button background colors
  ------------------------------ */
 
@@ -2716,7 +2701,6 @@ a.read-more.gyellow-2:hover {
 .btn.btn-border.border-4x {
     border: 4px solid;
 }
-
 
 /* button border white
  ------------------------------ */
@@ -2918,7 +2902,6 @@ a.read-more.gyellow-2:hover {
     color: #fff;
 }
 
-
 /*============ Image Boxes ============ */
 
 .section-side-image {
@@ -3111,7 +3094,6 @@ a.read-more.gyellow-2:hover {
 .iconlist.medium li i {
     color: #727272;
 }
-
 
 /* icon list style 2
  ------------------------------ */
@@ -3397,7 +3379,6 @@ a.read-more.gyellow-2:hover {
     background-color: #ecae3d;
 }
 
-
 /* sidebar works list
  ------------------------------ */
 .sidebar-works {
@@ -3432,7 +3413,6 @@ a.read-more.gyellow-2:hover {
     width: 100%;
     z-index: 999;
 }
-
 
 /*============ Topbar Styles ============ */
 
@@ -3953,7 +3933,6 @@ a.topbar-btn:hover, a.topbar-btn.active {
     padding: 50px;
     background-color: #ecae3d;
 }
-
 
 /* footer latest posts
  ------------------------------ */
@@ -4899,7 +4878,6 @@ ul.footer-flickr {
     border-bottom: none;
 }
 
-
 /* Footer Tags
  ------------------------------ */
 
@@ -5057,7 +5035,6 @@ ul.footer-flickr {
     color: #fff;
     background-color: #ecae3d;
 }
-
 
 /*============ Overlay Styles ============ */
 .section-overlay {
@@ -5303,7 +5280,6 @@ ul.footer-flickr {
     background-color: #101010;
 }
 
-
 /*============ Blog Posts ============ */
 
 /* post image holder
@@ -5388,7 +5364,6 @@ ul.footer-flickr {
 .post-infoicon.dark {
     background-color: #161616;
 }
-
 
 /*============ Footer Newsletter ============ */
 
@@ -5706,7 +5681,6 @@ div.demo .title span {
     background-color: #fff;
 }
 
-
 /*============ header inner ============ */
 
 .header-inner-tmargin {
@@ -5800,7 +5774,6 @@ div.demo .title span {
     content: "» ";
 }
 
-
 /*============ 5 and 7 custom cols ============ */
 
 .seven-cols .col-md-1, .seven-cols .col-sm-1, .seven-cols .col-lg-1 {
@@ -5810,7 +5783,6 @@ div.demo .title span {
 .five-cols .col-md-1, .five-cols .col-sm-1, .five-cols .col-lg-1 {
     width: 20%;
 }
-
 
 /*----------------------------RESPONSIVE STYLES------------------------------- */
 /* ---------- MAX 1024PX ---------- */
@@ -5841,7 +5813,6 @@ div.demo .title span {
         padding: 25% 0 0;
     }
 
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -5870,9 +5841,7 @@ div.demo .title span {
         margin-top: 0px;
     }
 
-
 }
-
 
 /* ---------- MAX 991PX ---------- */
 @media only screen and (max-width: 991px) {
@@ -5933,9 +5902,7 @@ div.demo .title span {
         padding: 16% 0 0;
     }
 
-
 }
-
 
 /* ---------- MAX 800PX ---------- */
 @media only screen and (max-width: 800px) {
@@ -6034,9 +6001,7 @@ div.demo .title span {
         height: 310px;
     }
 
-
 }
-
 
 /* ---------- MAX 768PX ---------- */
 @media only screen and (max-width: 768px) {
@@ -6135,9 +6100,7 @@ div.demo .title span {
         width: 100%;
     }
 
-
 }
-
 
 /* ---------- MAX 767PX ---------- */
 @media only screen and (max-width: 767px) {
@@ -6191,9 +6154,7 @@ div.demo .title span {
         padding-bottom: 30px;
     }
 
-
 }
-
 
 @media screen and (max-width: 640px) {
     .margin-bottom {
@@ -6307,9 +6268,7 @@ div.demo .title span {
         height: 270px;
     }
 
-
 }
-
 
 @media screen and (max-width: 480px) {
     .margin-bottom {
@@ -6434,9 +6393,7 @@ div.demo .title span {
         width: 50%;
     }
 
-
 }
-
 
 /* ---------- MAX 360PX ---------- */
 @media screen and (max-width: 360px) {
@@ -6611,9 +6568,7 @@ div.demo .title span {
         height: 195px;
     }
 
-
 }
-
 
 /* ---------- MAX 320PX ---------- */
 @media only screen and (max-width: 320px) {
@@ -6781,9 +6736,7 @@ div.demo .title span {
         padding-bottom: 35px;
     }
 
-
 }
-
 
 /* added new styles */
 h1.less-mar-3 {
@@ -7398,7 +7351,6 @@ a.animated-button.thar-green:before {
     padding: 30%;
 }
 
-
 @media screen and (max-width: 768px) {
     .text-box.padding-percent {
         padding: 3%;
@@ -7545,7 +7497,6 @@ a.animated-button.thar-green:before {
 
 }
 
-
 /* alignments */
 .float-left {
     float: left;
@@ -7584,7 +7535,6 @@ a:hover .link-hover-bline1 {
     border: 1px solid #d3d3d3;
     padding: 8px;
 }
-
 
 .imghvr *, .imghvr *:before, .imghvr *:after {
     box-sizing: border-box;
@@ -7680,7 +7630,6 @@ a:hover .link-hover-bline1 {
     transition: all 0.3s ease;
 }
 
-
 /* pricing sections */
 .price-sec-one {
     transition: all 0.3s ease;
@@ -7700,7 +7649,6 @@ a:hover .link-hover-bline1 {
 .price-sec-one .col-md-6.active {
     background-color: rgba(255, 255, 255, 0.3);
 }
-
 
 /* circles */
 .circle {
@@ -7850,7 +7798,6 @@ a:hover .link-hover-bline1 {
     height: auto;
 }
 
-
 /* font sizes */
 .iconsize,
 i.iconsize {
@@ -7932,7 +7879,6 @@ i.iconsize15 {
     font-size: 14px;
 }
 
-
 /* page titles */
 /* .page-title-1 {
 	float: left;
@@ -7962,7 +7908,6 @@ i.iconsize15 {
 	background: url(../images/back.jpg) no-repeat center top;
 } */
 
-
 @media screen and (max-width: 700px) {
     .page-title-1 {
         /* padding: 180px 0px 70px 0px; */
@@ -7980,8 +7925,6 @@ i.iconsize15 {
         padding: 50px 0px 50px 0px;
     }
 }
-
-
 
 /*=========================================
        Updated Code by Momin(@mominriyadh)
@@ -8020,7 +7963,6 @@ i.iconsize15 {
     justify-content: center!important;
     align-items: center!important;
 }
-
 
 .g-industries-area{
     background-image: url("../images/industries-bg.jpg");

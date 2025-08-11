@@ -6,7 +6,6 @@ Version: 1.0
 Design and Developed by: Codelayers
 */
 
-
 /*
 ======================================
 [ CSS TABLE CONTENT ]
@@ -18,7 +17,6 @@ Design and Developed by: Codelayers
 	2.parallax sections
 	3.footer styles
 
-	
 ======================================
 [ END CSS TABLE CONTENT ]
 ======================================
@@ -254,7 +252,6 @@ ul.bg-scicons li a:hover i, ul.bg-scicons li a.active i{
 	color:#727272;
 }
 
-
 /*============ Section Titles ============ */
 
 /* title container
@@ -268,12 +265,10 @@ ul.bg-scicons li a:hover i, ul.bg-scicons li a.active i{
 	padding-bottom:50px;
 }
 
-
 /*============ Parallax Sections ============ */
 .parallax-6 {
     background: rgba(0, 0, 0, 0) url("../images/parallax/bg-parallax1.jpg") no-repeat fixed 50% 0;
 }
-
 
 /*----------------------------RESPONSIVE STYLES------------------------------- */
 /* ---------- MAX 1024PX ---------- */
@@ -286,26 +281,12 @@ ul.bg-scicons li a:hover i, ul.bg-scicons li a.active i{
     height: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
 }
 	
 @media only screen and (max-width: 1000px) {
 	
-
-
 }	
 
-	
-	
 /* ---------- MAX 991PX ---------- */
 @media only screen and (max-width: 991px) {
 .container{
@@ -315,12 +296,7 @@ ul.bg-scicons li a:hover i, ul.bg-scicons li a.active i{
     margin-bottom: 100px;
 }
 
-
-
-
 }
-
-
 
 /* ---------- MAX 800PX ---------- */
 @media only screen and (max-width: 800px) {
@@ -335,26 +311,17 @@ ul.bg-scicons li a:hover i, ul.bg-scicons li a.active i{
     margin-top: 20px;
 }
 
-
-
-
 }
-
-
 
 /* ---------- MAX 768PX ---------- */
 @media only screen and (max-width: 768px) {
 
-
-
 }
-
 
 /* ---------- MAX 767PX ---------- */
 @media only screen and (max-width: 767px) {
 
 }
-
 
 @media screen and (max-width: 640px) {
 .bg-header-banner-1 {
@@ -370,12 +337,7 @@ ul.bg-scicons li a:hover i, ul.bg-scicons li a.active i{
     width: 100%;
 }
 
-
-
-
-
 }
-
 
 @media screen and (max-width: 480px) {
 .bg-header-banner-1 .text-box {
@@ -391,10 +353,6 @@ ul.bg-scicons li a:hover i, ul.bg-scicons li a.active i{
 .bg-left-item-holder-4 {
 	min-height:300px;
 }
-
-
-
-
 
 }
 
@@ -416,17 +374,7 @@ ul.bg-scicons li a:hover i, ul.bg-scicons li a.active i{
     width: 82%;
 }
 
-
-
-
-
-
-
-
-
-
 }
-
 
 /* ---------- MAX 320PX ---------- */
 @media only screen and (max-width: 320px) {
@@ -437,6 +385,5 @@ ul.bg-scicons li a:hover i, ul.bg-scicons li a.active i{
     top: 17px;
     left: 21px;
 }
-
 
 }

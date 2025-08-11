@@ -45,7 +45,6 @@
     }
 }
 
-
 .blog-post:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -269,7 +268,6 @@
     }
 }
 
-
 /*===============================
         Single Blog Post Styles
   ===============================*/
@@ -288,7 +286,6 @@
     position: sticky;
     top: 120px;
 }
-
 
 .g-sidebar-title {
     font-size: 2rem;
@@ -336,8 +333,9 @@
 .g-recent-post-img {
     width: 60px;
     height: 60px;
-    border-radius: 4px;
+    border-radius: 5px;
     object-fit: cover;
+    border: solid 1px;
 }
 
 .g-recent-post-info {
@@ -358,25 +356,14 @@
     color: #6c757d;
 }
 
+.post-info h4 {
+    padding-top: 15px;
+    line-height: 1.2em;
+    font-size: 22px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.row-flex{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
